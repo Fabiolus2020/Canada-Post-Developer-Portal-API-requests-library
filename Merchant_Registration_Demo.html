@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canada Post Integration Demo</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f2f5;
+        }
+        .demo-container {
+            border: 2px solid #003087; /* Canada Post Blue */
+            padding: 30px;
+            border-radius: 12px;
+            background-color: #ffffff;
+            width: 400px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        h2 {
+            margin-top: 0;
+            color: #003087;
+            font-size: 1.2rem;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .form-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0 12px;
+        }
+        label {
+            font-weight: 600;
+            color: #444;
+            font-size: 0.9rem;
+        }
+        .demo-input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            outline: none;
+            transition: all 0.3s ease-in-out;
+            box-sizing: border-box;
+            font-size: 0.9rem;
+        }
+        .demo-input:focus {
+            border-color: #003087;
+            box-shadow: 0 0 8px rgba(0, 48, 133, 0.3);
+        }
+        .demo-btn {
+            background-color: #E4002B; /* Canada Post Red */
+            color: white;
+            border: none;
+            padding: 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            width: 100%;
+            font-size: 1rem;
+            transition: background-color 0.2s;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 48px;
+            margin-top: 10px;
+        }
+        .demo-btn:hover {
+            background-color: #b30022;
+        }
+        /* Loading Spinner Logic */
+        .demo-btn.loading {
+            color: transparent;
+            pointer-events: none;
+        }
+        .demo-btn.loading::after {
+            content: "";
+            position: absolute;
+            width: 22px;
+            height: 22px;
+            border: 3px solid rgba(255,255,255,0.3);
+            border-top-color: #fff;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+
+<div class="demo-container">
+    <h2>Canada Post Integration</h2>
+    <form id="demoForm" name="testing" action="https://www.canadapost-postescanada.ca/devonboarding-integrationdev/api/activation" method="post" onsubmit="handleSubmit()">
+        <table class="form-table">
+            <tr>
+                <td><label for="platformCustomerNumber" hidden="hidden">Platform Cust #</label></td>
+                <td><input type="hidden" id="platformCustomerNumber" name="platformId" value="1234567" class="demo-input"/></td>
+            </tr>
+            <tr>
+                <td><label for="returnUrl" hidden="hidden">Return URL</label></td>
+                <td><input type="hidden" id="returnUrl" name="returnUrl" value="https://domain.com/receive/capture.php" class="demo-input"/></td>
+            </tr>
+            <tr>
+                <td><label for="language" hidden="hidden">Language</label></td>
+                <td><input type="hidden" id="language" name="language" value="en" class="demo-input"/></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="submit" id="submitBtn" class="demo-btn">Register Your Canada Post Account</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+<script>
+    function handleSubmit() {
+        const btn = document.getElementById('submitBtn');
+        btn.classList.add('loading');
+        // The form will continue to submit to the 'action' URL defined in the form tag.
+    }
+</script>
+
+</body>
+</html>
