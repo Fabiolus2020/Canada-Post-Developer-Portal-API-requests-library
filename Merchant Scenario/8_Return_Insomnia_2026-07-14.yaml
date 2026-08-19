@@ -1,0 +1,2576 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Developer Portal merchant Test Cases(Presentation)
+meta:
+  id: wrk_95b2d5ddaefb41d8b96e9e77f1d97dc8
+  created: 1787164505646
+  modified: 1787164505646
+  description: ""
+collection:
+  - name: Shipping API's
+    meta:
+      id: fld_52c63b48c0b140caa19ccb27f5d09cd0
+      created: 1708476872959
+      modified: 1757517298180
+      sortKey: -1699892788294
+      description: ""
+    children:
+      - name: Shipping_Canada_Manifest_Required
+        meta:
+          id: fld_d502c82c6bb842409a0211ab8a249c7c
+          created: 1708476872959
+          modified: 1750770419891
+          sortKey: -1707426001917
+          description: >-
+            Below are all domestic shipments availabel to ship for Canada to
+            Canada
+
+
+            DOM.RP	Regular Parcel
+
+            DOM.EP	Expedited Parcel
+
+            DOM.XP	Xpresspost
+
+            DOM.PC	Priority
+
+            DOM.LIB	Library Books
+        children:
+          - name: Shipping_Options_scenario
+            meta:
+              id: fld_bc5c225202174a1e8519be9448057828
+              created: 1708476872960
+              modified: 1708476872960
+              sortKey: -1707425916812.7812
+              description: >-
+                Canada Post offer shipping options. Below are examples for each
+                options. For example you can make them available to the end user
+                to choose globally for all shipments or via a list where options
+                can be picked by the end user.
+
+
+                Keep in mind that options can be combined for example you could
+                have option for Coverage(insurance) and Signature for the same
+                shipments therefore it is important to allow selection of
+                multiple options per shipments.
+
+
+                Below are all shipping options available when shipping within
+                Canada
+
+                	"option-code": [
+                    "SO"				signature option
+                    "COD"				Collect On Delivery option
+                    "COV"				Insurance option
+                    "D2PO"			Delicer To Post Office option
+                    "HFP"				Hold For Pickup option
+                    "PA21"			Proof Of Age 21 option
+                    "PA19"			Proof Of Age 19 option
+                    "PA18"			Proof Of Age 18 option
+                    "LAD"				Leave At The Door option
+                    "DNS"				Do Not Safe Drop option
+                	]
+          - name: CreateShipments_And_QR_Code
+            meta:
+              id: fld_ee9901849f3a47a8b9b5f12ac4061e16
+              created: 1708476872974
+              modified: 1708476872974
+              sortKey: -1707425916821.375
+              description: ""
+          - name: Shipping Services for Canada
+            meta:
+              id: fld_c765e7ebe27f4b148c58b2c1169c2c23
+              created: 1708476872976
+              modified: 1708476872976
+              sortKey: -1707425916804.1875
+              description: ""
+      - name: " Shipping_Canada_No_Manifest_Required"
+        meta:
+          id: fld_ebea3c739c004cea97a409e4249b0e8f
+          created: 1708476872988
+          modified: 1757517298180
+          sortKey: -1707426001817
+          description: ""
+        children:
+          - name: Shipment_With_Shipping_Options
+            meta:
+              id: fld_d4e640d5b4c24b1f86aae7ff44232a17
+              created: 1708476872988
+              modified: 1708476872988
+              sortKey: -1707426069368.875
+              description: >-
+                Canada Post offer shipping options. Below are examples for each
+                options. For example you can make them available to the end user
+                to choose globally for all shipments or via a list where options
+                can be picked by the end user.
+
+
+                Keep in mind that options can be combined for example you could
+                have option for Coverage(insurance) and Signature for the same
+                shipments therefore it is important to allow selection of
+                multiple options per shipments.
+          - name: CreateShipments_And_QR_Code
+            meta:
+              id: fld_88ee1bb6d8e64382978d48b5fa3d4ae9
+              created: 1708476873004
+              modified: 1757517298180
+              sortKey: -1707426069372
+              description: ""
+          - name: Shipping Services for Canada
+            meta:
+              id: fld_33cd2828379a4af2947940bace95bea7
+              created: 1708476873007
+              modified: 1708476873007
+              sortKey: -1707426069365.75
+              description: ""
+      - name: Shipping_USA_Manifest_Required
+        meta:
+          id: fld_5572cd72bd484f5dbfa22fe688c7cb22
+          created: 1708476873021
+          modified: 1740684746158
+          sortKey: -1699818832741.5
+          description: ""
+        children:
+          - name: Shipment_With_Shipping_Options
+            meta:
+              id: fld_1866306dc5144b3990768e5f1d1df10c
+              created: 1708476873021
+              modified: 1708476873021
+              sortKey: -1707673013479.4453
+              description: ""
+          - name: Non_Delivery_Handling_option_for_USA_Shipments
+            meta:
+              id: fld_eaf992d89b434754bcc05e3e211b53ac
+              created: 1708476873025
+              modified: 1708476873025
+              sortKey: -1707672276841.6055
+              description: ""
+          - name: Shipping Services for USA
+            meta:
+              id: fld_eceaf4a4fda8424b9fc5ba6c2a3cfa73
+              created: 1708476873031
+              modified: 1708476873031
+              sortKey: -1707672092682.1455
+              description: ""
+          - name: Shipment_and_Custom_Declaration_Info
+            meta:
+              id: fld_4eb1d53e78b34a57926d30e8507c150a
+              created: 1708476873035
+              modified: 1708476873035
+              sortKey: -1707671908522.6855
+              description: ""
+          - name: CreateShipments_And_QR_Code
+            meta:
+              id: fld_5adeba78965742a7855d4717500ba158
+              created: 1730292239786
+              modified: 1730292288611
+              sortKey: -1707673750117.2852
+              description: ""
+      - name: Shipping Receipt API
+        meta:
+          id: fld_a126e97b212d4db49e10c1b1a8be2544
+          created: 1708476873041
+          modified: 1708476873041
+          sortKey: -1699735193113.75
+          description: ""
+      - name: GetShipments API's
+        meta:
+          id: fld_13222b1f24834c25aeaf0e31d755a224
+          created: 1708476873042
+          modified: 1708476873042
+          sortKey: -1699682918283.9062
+          description: ""
+      - name: GetShipment API
+        meta:
+          id: fld_0d98934183ed43bbadb928db2bf81e0f
+          created: 1708476873045
+          modified: 1708476873045
+          sortKey: -1699693373249.875
+          description: ""
+      - name: Shipping_USA_No_Manifest_Required
+        meta:
+          id: fld_04c4e94c70e64bb4bbe902e693f4db1c
+          created: 1708476873046
+          modified: 1708476873046
+          sortKey: -1699797922834.5625
+          description: ""
+        children:
+          - name: Shipment_With_Shipping_Options
+            meta:
+              id: fld_f3b28aef1b5b42de95273714cd87cd06
+              created: 1708476873047
+              modified: 1708476873047
+              sortKey: -1707673013479.4453
+              description: ""
+          - name: Non_Delivery_Handling_option_for_USA_Shipments
+            meta:
+              id: fld_8255d10c08554d5dbf904532c87d630b
+              created: 1708476873049
+              modified: 1708476873049
+              sortKey: -1707672276841.6055
+              description: ""
+          - name: Shipping Services for USA
+            meta:
+              id: fld_7e50f5959a714fe4a6a99136fab421d9
+              created: 1708476873057
+              modified: 1708476873057
+              sortKey: -1707672092682.1455
+              description: ""
+          - name: Shipment_and_Custom_Declaration_Info
+            meta:
+              id: fld_7892f4f047d14a6b9142577dcee56a4c
+              created: 1708476873062
+              modified: 1708476873062
+              sortKey: -1707671908522.6855
+              description: ""
+          - name: CreateShipments_And_QR_Code
+            meta:
+              id: fld_526de9a168d847fb97dbff62c4448fd6
+              created: 1730294092518
+              modified: 1730294179136
+              sortKey: -1707673750117.2852
+              description: ""
+      - name: GetArtefact_API's
+        meta:
+          id: fld_0dd7dc583f354992b4b0e5f8a4c8b4bb
+          created: 1708476873125
+          modified: 1708476873125
+          sortKey: -1699672463317.9375
+          description: ""
+      - name: Get Shipment Price API
+        meta:
+          id: fld_bb7c556998d0468dab1e4e200e22d401
+          created: 1708476873127
+          modified: 1708476873127
+          sortKey: -1699688145766.8906
+          description: ""
+      - name: Get Shipment Details API
+        meta:
+          id: fld_56a24528d9434b5c9426a8f7f3152e93
+          created: 1708476873130
+          modified: 1708476873130
+          sortKey: -1699685532025.3984
+          description: ""
+      - name: GetGroups API
+        meta:
+          id: fld_754b9394654b43efa6f4bcfc82bc4305
+          created: 1708476873132
+          modified: 1708476873132
+          sortKey: -1699651552386
+          description: ""
+      - name: Void Shipment API
+        meta:
+          id: fld_c504179c6a26490b979f36fa9c22c37a
+          created: 1708476873133
+          modified: 1708476873133
+          sortKey: -1699651552286
+          description: ""
+      - name: Shipment Refund API
+        meta:
+          id: fld_91af83a4fc854f7086eb37340900a688
+          created: 1708476873134
+          modified: 1708476873134
+          sortKey: -1699651552186
+          description: ""
+      - name: Manifest API's
+        meta:
+          id: fld_15506ff104344bd18e23b1658c68d4cd
+          created: 1708476873135
+          modified: 1708476873135
+          sortKey: -1699750875543.9531
+          description: ""
+      - name: Shipping_International_Manifest_Required
+        meta:
+          id: fld_63003e5d5a8345049fe2a2f8a0d7caca
+          created: 1730296737516
+          modified: 1730296770674
+          sortKey: -1699774399189.2578
+          description: ""
+        children:
+          - name: Shipment_With_Shipping_Options
+            meta:
+              id: fld_b190f578bb9b45a8b646dfc8316b9a0a
+              created: 1730296737520
+              modified: 1730296737520
+              sortKey: -1707673013479.4453
+              description: ""
+          - name: Non_Delivery_Handling_option_for_Intl_Shipments
+            meta:
+              id: fld_5cced02c9fff4f8ba5a90a94c160f034
+              created: 1730296737563
+              modified: 1730296737563
+              sortKey: -1707672276841.6055
+              description: ""
+          - name: Shipping Services for International
+            meta:
+              id: fld_082f4fe6e38b438dbbf11a7053a1efa9
+              created: 1730296737674
+              modified: 1730296737674
+              sortKey: -1707672092682.1455
+              description: ""
+          - name: Shipment_and_Custom_Declaration_Info
+            meta:
+              id: fld_be8166f27f2b46d09e0f2f6b90293d0b
+              created: 1730296737735
+              modified: 1730296737735
+              sortKey: -1707671908522.6855
+              description: ""
+          - name: CreateShipments_And_QR_Code
+            meta:
+              id: fld_25e6b0c94ffc4b0f89da2a8730c28f5d
+              created: 1730296948036
+              modified: 1730296962046
+              sortKey: -1707673750117.2852
+              description: ""
+      - name: Shipping_International_No_Manifest_Required
+        meta:
+          id: fld_ec118a54dce344b4bc54d7dc4e08ff0c
+          created: 1730296801801
+          modified: 1730296837062
+          sortKey: -1699762637366.6055
+          description: ""
+        children:
+          - name: Shipment_With_Shipping_Options
+            meta:
+              id: fld_1a4840e27c044f5a9c10cb7231b02f9e
+              created: 1730296801805
+              modified: 1730296801805
+              sortKey: -1707673013479.4453
+              description: ""
+          - name: Non_Delivery_Handling_option_for_Intl_Shipments
+            meta:
+              id: fld_656fd71ac731420380f92fe8660b03ad
+              created: 1730296801843
+              modified: 1730296801843
+              sortKey: -1707672276841.6055
+              description: ""
+          - name: Shipping Services for International
+            meta:
+              id: fld_95fce41566b94878b3ab878bcad6a238
+              created: 1730296801977
+              modified: 1730296801977
+              sortKey: -1707672092682.1455
+              description: ""
+          - name: Shipment_and_Custom_Declaration_Info
+            meta:
+              id: fld_a4370dc39f644abba587b7789a037f2b
+              created: 1730296802073
+              modified: 1730296802073
+              sortKey: -1707671908522.6855
+              description: ""
+          - name: CreateShipments_And_QR_Code
+            meta:
+              id: fld_9538043b3dd94c39bb8f7a444111fc11
+              created: 1730297162809
+              modified: 1730297170734
+              sortKey: -1707673750117.2852
+              description: ""
+  - name: Rating API's
+    meta:
+      id: fld_b527864b7fc5447baca70084f56b3b7d
+      created: 1708476873138
+      modified: 1770061060837
+      sortKey: -1699973212088
+      description: ""
+  - name: Tracking API's
+    meta:
+      id: fld_f337c6d6e7ab49e98de4e1c897fb6932
+      created: 1708476873143
+      modified: 1762453658459
+      sortKey: -1699985604029
+      description: ""
+  - name: Post Office API's
+    meta:
+      id: fld_801629d2ade84f95a774aff85a7b0c9e
+      created: 1739301319376
+      modified: 1743605825743
+      sortKey: -1699872682345.5
+      description: ""
+  - name: Return API's
+    meta:
+      id: fld_e7c308b643b54d99b898d814d9390764
+      created: 1743605773726
+      modified: 1750260989134
+      sortKey: -1699867655858.375
+      description: ""
+    children:
+      - name: GetAuthorizedReturn
+        meta:
+          id: fld_fa9f32701eed40f8953e1f27b0d25bf7
+          created: 1744727981658
+          modified: 1744728025020
+          sortKey: -1744727981658
+          description: ""
+        children:
+          - url: "{{ _.base_url }}/returns/v1/{{ _.mailby }}/{{ _.mobo
+              }}/authorized-returns"
+            name: CreateAuthorizedReturn
+            meta:
+              id: req_bcb5c22dc8f947418ef27c644cf0c9f8
+              created: 1743605848870
+              modified: 1773518664521
+              isPrivate: false
+              description: >-
+                <table border="1" cellpadding="6" cellspacing="0"
+                style="border-collapse: collapse; width: 100%; font-family:
+                Arial, sans-serif;">
+                  <thead>
+                    <tr>
+                      <th style="width: 20%;">Element Name</th>
+                      <th style="width: 15%;">Type</th>
+                      <th style="width: 20%;">Required / Optional</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>createPublicKey</td>
+                      <td>boolean</td>
+                      <td>Optional</td>
+                      <td>{true}<br>If set to "true", generates a public URL for the PDF label and includes the link with expiry date in the response. Useful for QR code generation and sharing labels digitally. <br><strong>Note:</strong> 'retail-only = true' overrides this flag. These flags are mutually exclusive.</td>
+                    </tr>
+                    <tr>
+                      <td>createQrCode</td>
+                      <td>boolean</td>
+                      <td>Optional</td>
+                      <td>(true|false)<br>Must be used with <code>createPublicKey=true</code>. Automatically returns the QR code of the public URL.</td>
+                    </tr>
+                    <tr>
+                      <td>boxFree</td>
+                      <td>boolean</td>
+                      <td>Optional</td>
+                      <td>(true|false)<br>Adds "Box-free / Sans emballage" messaging and green QR code. Eligibility rules apply.</td>
+                    </tr>
+                		    <tr>
+                      <td>retailOnly</td>
+                      <td>boolean</td>
+                      <td>Optional</td>
+                      <td>{true}<br>
+                if flag is present and set to 'true', service will not return an
+                artifact link.
+
+
+                Note:
+
+
+                If ‘retailOnly’ flag is present, it will always be true.
+
+                If ‘retailOnly’ flag is not present, pdf label will be given
+                when 2D barcode is scanned by a customer.
+
+                ‘retailOnly = true’ will always take precedence over
+                ‘createPublicKey’, they both are mutually exclusive.</td>
+                    </tr>
+                    <tr>
+                      <td>customerBarcode</td>
+                      <td>string</td>
+                      <td>Optional</td>
+                      <td>(16 alphanumeric)<br>Value to be rendered in the customer info section of the return label.</td>
+                    </tr>
+                    <tr>
+                      <td>customerBarcodeType</td>
+                      <td>string</td>
+                      <td>Optional</td>
+                      <td>(LINEAR | 2D)<br>Type of the barcode. Required if <code>customerBarcode</code> is provided.</td>
+                    </tr>
+                    <tr>
+                      <td>serviceCode</td>
+                      <td>string</td>
+                      <td>Required</td>
+                      <td>Occurs 1-20 times. If omitted, all applicable services are returned.<br><br>
+                        <table border="1" cellpadding="4" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+                          <thead>
+                            <tr>
+                              <th>Service Code</th>
+                              <th>Description</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr><td>DOM.RP</td><td>Regular Parcel</td></tr>
+                            <tr><td>DOM.EP</td><td>Expedited Parcel</td></tr>
+                            <tr><td>DOM.XP</td><td>Xpresspost</td></tr>
+                            <tr><td>DOM.PC</td><td>Priority</td></tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr><td>returner</td><td>object</td><td>Required</td><td>Contains sender info that will appear in the "From" address of the label. Empty fields are removed when formatting.</td></tr>
+                    <tr><td>name</td><td>string</td><td>Required</td><td>(44 alphanumeric) Contact name of the returner.</td></tr>
+                    <tr><td>company</td><td>string</td><td>Optional</td><td>(44 alphanumeric) Company name of the returner.</td></tr>
+                    <tr><td>domesticAddress</td><td>object</td><td>Required</td><td>Address information for the returner. Blank fields are removed in final formatting.</td></tr>
+                    <tr><td>addressLine1</td><td>string</td><td>Required</td><td>(44 alphanumeric)</td></tr>
+                    <tr><td>City</td><td>string</td><td>Required</td><td>(40 alphanumeric)</td></tr>
+                    <tr><td>province</td><td>string</td><td>Required</td><td>(2 characters)</td></tr>
+                    <tr><td>postalCode</td><td>string</td><td>Required</td><td>(A9A9A9 format)</td></tr>
+                    <tr><td>receiver</td><td>object</td><td>Required</td><td>Receiver's destination info. Blank fields removed in label formatting.</td></tr>
+                    <tr><td>name</td><td>string</td><td>Required</td><td>(44 alphanumeric) Contact name of receiver.</td></tr>
+                    <tr><td>company</td><td>string</td><td>Optional</td><td>(44 alphanumeric) Company name of receiver.</td></tr>
+                    <tr><td>email</td><td>string</td><td>Optional</td><td>(60 chars, valid email) Reserved for future use.</td></tr>
+                    <tr><td>receiverVoiceNumber</td><td>string</td><td>Optional</td><td>(up to 25 characters) Receiver phone number. Will not appear on label.</td></tr>
+                    <tr><td>domesticAddress</td><td>object</td><td>Required</td><td>Receiver address. Required if receiver exists. Blank fields are removed for label formatting.</td></tr>
+                    <tr><td>addressLine1</td><td>string</td><td>Required</td><td>(44 alphanumeric)</td></tr>
+                    <tr><td>City</td><td>string</td><td>Required</td><td>(40 alphanumeric)</td></tr>
+                    <tr><td>province</td><td>string</td><td>Required</td><td>(2 characters)</td></tr>
+                    <tr><td>postalCode</td><td>string</td><td>Required</td><td>(A9A9A9 format)</td></tr>
+                    <tr><td>parcelCharacteristics</td><td>object</td><td>Optional</td><td>Information about the physical characteristics of the parcel.</td></tr>
+                    <tr><td>weight</td><td>number</td><td>Optional</td><td>(Pattern 3.3 e.g. 999.999) Total package weight in kg.</td></tr>
+                    <tr><td>dimensions</td><td>object</td><td>Optional</td><td>Parcel dimension information (cm).</td></tr>
+                    <tr><td>length</td><td>number</td><td>Conditionally Required</td><td>(Pattern 3.1 e.g. 999.9) Required if <code>dimensions</code> exists. Improves pricing accuracy.</td></tr>
+                    <tr><td>width</td><td>number</td><td>Conditionally Required</td><td>Same rules as <code>length</code>. Width of the parcel in cm.</td></tr>
+                    <tr><td>height</td><td>number</td><td>Conditionally Required</td><td>Same rules as <code>length</code>. Height of the parcel in cm.</td></tr>
+                    <tr><td>printPreferences</td><td>object</td><td>Optional</td><td>Print preferences for return labels.</td></tr>
+                    <tr><td>outputFormat</td><td>string</td><td>Optional</td><td>(7 alphanumeric) Valid: <code>8.5x11</code>, <code>4x6</code>. Defaults to <code>8.5x11</code>.</td></tr>
+                    <tr><td>encoding</td><td>string</td><td>Optional</td><td>{PDF, ZPL}<br>Defines output format. If ZPL, returned data contains ZPL II printer commands. Used with thermal printers.</td></tr>
+                    <tr><td>showPackingInstructions</td><td>boolean</td><td>Optional</td><td>{true, false} Defaults to true. Indicates whether packing instructions should appear on label.</td></tr>
+                    <tr><td>settlementInfo</td><td>object</td><td>Optional</td><td>Analogous to Create Shipment. Optional and generally omitted.</td></tr>
+                    <tr><td>paidByCustomer</td><td>string</td><td>Optional</td><td>(10-digit numeric) Reserved for future use.</td></tr>
+                    <tr><td>contractId</td><td>string</td><td>Optional</td><td>(10-digit numeric) Reserved for future use.</td></tr>
+                    <tr><td>references</td><td>object</td><td>Optional</td><td>User-defined reference values for tracking or internal use.</td></tr>
+                    <tr><td>customerRef1</td><td>string</td><td>Optional</td><td>(Up to 35 characters) Appears on label and in tracking files.</td></tr>
+                    <tr><td>customerRef2</td><td>string</td><td>Optional</td><td>Same as <code>customerRef1</code>. Used as a second reference field.</td></tr>
+                    <tr><td>notifications</td><td>object</td><td>Optional</td><td>Holds email notification settings.</td></tr>
+                    <tr><td>notification</td><td>object</td><td>Mandatory</td><td>Required if <code>notifications</code> is present. Up to 4 allowed. Each holds one email + notification types.</td></tr>
+                    <tr><td>email</td><td>string</td><td>Mandatory</td><td>(Up to 60 chars) Email for tracking updates. Must be valid.</td></tr>
+                    <tr><td>onShipment</td><td>boolean</td><td>Mandatory</td><td>{true, false} Required with <code>notification</code>. Enables shipment updates.</td></tr>
+                    <tr><td>onException</td><td>boolean</td><td>Mandatory</td><td>{true, false} Enables exception-related updates.</td></tr>
+                    <tr><td>onDelivery</td><td>boolean</td><td>Mandatory</td><td>{true, false} Enables delivery updates.</td></tr>
+                    <tr><td>emailSubject</td><td>string</td><td>Optional</td><td>{tracking, customer-ref-1, customer-ref-2}<br>Subject line values:<ul><li>Ship Notification for Item</li><li>Exception Notification for Item</li><li>Delivery Notification for Item</li></ul>Defaults to "TRACKING" with tracking number.</td></tr>
+                  </tbody>
+                </table>
+              sortKey: -1744727995585
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"customerBarcode": "1234567890",
+                	"customerBarcodeType": "2D",
+                	"serviceCode": "DOM.XP",
+                	"returner": {
+                		"name": "Bulma",
+                		"company": "Capsule Corp.",
+                		"domesticAddress": {
+                			"addressLine1": "502 MAIN ST N",
+                			"city": "MONTREAL",
+                			"province": "QC",
+                			"postalCode": "H2B1A0"
+                		}
+                	},
+                	"receiver": {
+                		"name": "Ryuko Saito",
+                		"company": "Kubere",
+                		"email": "test@test.com",
+                		"receiverVoiceNumber": "111-111-1111",
+                		"domesticAddress": {
+                			"addressLine1": "23 jardin private",
+                			"city": "Ottawa",
+                			"province": "ON",
+                			"postalCode": "K1K4T3"
+                		}
+                	},
+                	"parcelCharacteristics": {
+                		"weight": 15,
+                		"dimensions": {
+                			"length": 10,
+                			"width": 10,
+                			"height": 10
+                		}
+                	},
+                	"printPreferences": {
+                		"outputFormat": "8.5x11",
+                		"encoding": "PDF",
+                		"showPackingInstructions": true
+                	},
+                	"settlementInfo": {
+                		"paidByCustomer": "{{ _.paid_by }}",
+                		"contractId": "{{ _['contract-id'] }}"
+                	},
+                	"references": {
+                		"customerRef1": "ref1",
+                		"customerRef2": "ref2"
+                	},
+                	"notifications": {
+                		"notificationsList": [
+                			{
+                				"email": "test@test.com",
+                				"onShipment": true,
+                				"onException": true,
+                				"onDelivery": true
+                			}
+                		],
+                		"emailSubject": "tracking"
+                	}
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.0.1
+              - name: Accept
+                value: application/json
+                description: ""
+                disabled: false
+              - name: Authorization
+                value: Bearer {{ _.accessToken }}
+                description: ""
+                disabled: false
+              - name: Accept-Language
+                value: en-CA
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{ _.base_url }}/returns/v1/{{ _.mailby }}/{{ _.mobo
+              }}/authorized-returns"
+            name: CreateAuthorizedReturnAndQRCode
+            meta:
+              id: req_774875f16ddc40d2b6038c35fe098b37
+              created: 1743689184372
+              modified: 1773518959885
+              isPrivate: false
+              description: >-
+                <table border="1" cellpadding="6" cellspacing="0"
+                style="border-collapse: collapse; width: 100%; font-family:
+                Arial, sans-serif;">
+                  <thead>
+                    <tr>
+                      <th style="width: 20%;">Element Name</th>
+                      <th style="width: 15%;">Type</th>
+                      <th style="width: 20%;">Required / Optional</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>createPublicKey</td>
+                      <td>boolean</td>
+                      <td>Optional</td>
+                      <td>{true}<br>If set to "true", generates a public URL for the PDF label and includes the link with expiry date in the response. Useful for QR code generation and sharing labels digitally. <br><strong>Note:</strong> 'retail-only = true' overrides this flag. These flags are mutually exclusive.</td>
+                    </tr>
+                    <tr>
+                      <td>createQrCode</td>
+                      <td>boolean</td>
+                      <td>Optional</td>
+                      <td>(true|false)<br>Must be used with <code>createPublicKey=true</code>. Automatically returns the QR code of the public URL.</td>
+                    </tr>
+                    <tr>
+                      <td>boxFree</td>
+                      <td>boolean</td>
+                      <td>Optional</td>
+                      <td>(true|false)<br>Adds "Box-free / Sans emballage" messaging and green QR code. Eligibility rules apply.</td>
+                    </tr>
+                				    <tr>
+                      <td>retailOnly</td>
+                      <td>boolean</td>
+                      <td>Optional</td>
+                      <td>{true}<br>
+                if flag is present and set to 'true', service will not return an
+                artifact link.
+
+
+                Note:
+
+
+                If ‘retailOnly’ flag is present, it will always be true.
+
+                If ‘retailOnly’ flag is not present, pdf label will be given
+                when 2D barcode is scanned by a customer.
+
+                ‘retailOnly = true’ will always take precedence over
+                ‘createPublicKey’, they both are mutually exclusive.</td>
+                    </tr>
+                    <tr>
+                      <td>customerBarcode</td>
+                      <td>string</td>
+                      <td>Optional</td>
+                      <td>(16 alphanumeric)<br>Value to be rendered in the customer info section of the return label.</td>
+                    </tr>
+                    <tr>
+                      <td>customerBarcodeType</td>
+                      <td>string</td>
+                      <td>Optional</td>
+                      <td>(LINEAR | 2D)<br>Type of the barcode. Required if <code>customerBarcode</code> is provided.</td>
+                    </tr>
+                    <tr>
+                      <td>serviceCode</td>
+                      <td>string</td>
+                      <td>Required</td>
+                      <td>Occurs 1-20 times. If omitted, all applicable services are returned.<br><br>
+                        <table border="1" cellpadding="4" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+                          <thead>
+                            <tr>
+                              <th>Service Code</th>
+                              <th>Description</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr><td>DOM.RP</td><td>Regular Parcel</td></tr>
+                            <tr><td>DOM.EP</td><td>Expedited Parcel</td></tr>
+                            <tr><td>DOM.XP</td><td>Xpresspost</td></tr>
+                            <tr><td>DOM.PC</td><td>Priority</td></tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr><td>returner</td><td>object</td><td>Required</td><td>Contains sender info that will appear in the "From" address of the label. Empty fields are removed when formatting.</td></tr>
+                    <tr><td>name</td><td>string</td><td>Required</td><td>(44 alphanumeric) Contact name of the returner.</td></tr>
+                    <tr><td>company</td><td>string</td><td>Optional</td><td>(44 alphanumeric) Company name of the returner.</td></tr>
+                    <tr><td>domesticAddress</td><td>object</td><td>Required</td><td>Address information for the returner. Blank fields are removed in final formatting.</td></tr>
+                    <tr><td>addressLine1</td><td>string</td><td>Required</td><td>(44 alphanumeric)</td></tr>
+                    <tr><td>City</td><td>string</td><td>Required</td><td>(40 alphanumeric)</td></tr>
+                    <tr><td>province</td><td>string</td><td>Required</td><td>(2 characters)</td></tr>
+                    <tr><td>postalCode</td><td>string</td><td>Required</td><td>(A9A9A9 format)</td></tr>
+                    <tr><td>receiver</td><td>object</td><td>Required</td><td>Receiver's destination info. Blank fields removed in label formatting.</td></tr>
+                    <tr><td>name</td><td>string</td><td>Required</td><td>(44 alphanumeric) Contact name of receiver.</td></tr>
+                    <tr><td>company</td><td>string</td><td>Optional</td><td>(44 alphanumeric) Company name of receiver.</td></tr>
+                    <tr><td>email</td><td>string</td><td>Optional</td><td>(60 chars, valid email) Reserved for future use.</td></tr>
+                    <tr><td>receiverVoiceNumber</td><td>string</td><td>Optional</td><td>(up to 25 characters) Receiver phone number. Will not appear on label.</td></tr>
+                    <tr><td>domesticAddress</td><td>object</td><td>Required</td><td>Receiver address. Required if receiver exists. Blank fields are removed for label formatting.</td></tr>
+                    <tr><td>addressLine1</td><td>string</td><td>Required</td><td>(44 alphanumeric)</td></tr>
+                    <tr><td>City</td><td>string</td><td>Required</td><td>(40 alphanumeric)</td></tr>
+                    <tr><td>province</td><td>string</td><td>Required</td><td>(2 characters)</td></tr>
+                    <tr><td>postalCode</td><td>string</td><td>Required</td><td>(A9A9A9 format)</td></tr>
+                    <tr><td>parcelCharacteristics</td><td>object</td><td>Optional</td><td>Information about the physical characteristics of the parcel.</td></tr>
+                    <tr><td>weight</td><td>number</td><td>Optional</td><td>(Pattern 3.3 e.g. 999.999) Total package weight in kg.</td></tr>
+                    <tr><td>dimensions</td><td>object</td><td>Optional</td><td>Parcel dimension information (cm).</td></tr>
+                    <tr><td>length</td><td>number</td><td>Conditionally Required</td><td>(Pattern 3.1 e.g. 999.9) Required if <code>dimensions</code> exists. Improves pricing accuracy.</td></tr>
+                    <tr><td>width</td><td>number</td><td>Conditionally Required</td><td>Same rules as <code>length</code>. Width of the parcel in cm.</td></tr>
+                    <tr><td>height</td><td>number</td><td>Conditionally Required</td><td>Same rules as <code>length</code>. Height of the parcel in cm.</td></tr>
+                    <tr><td>printPreferences</td><td>object</td><td>Optional</td><td>Print preferences for return labels.</td></tr>
+                    <tr><td>outputFormat</td><td>string</td><td>Optional</td><td>(7 alphanumeric) Valid: <code>8.5x11</code>, <code>4x6</code>. Defaults to <code>8.5x11</code>.</td></tr>
+                    <tr><td>encoding</td><td>string</td><td>Optional</td><td>{PDF, ZPL}<br>Defines output format. If ZPL, returned data contains ZPL II printer commands. Used with thermal printers.</td></tr>
+                    <tr><td>showPackingInstructions</td><td>boolean</td><td>Optional</td><td>{true, false} Defaults to true. Indicates whether packing instructions should appear on label.</td></tr>
+                    <tr><td>settlementInfo</td><td>object</td><td>Optional</td><td>Analogous to Create Shipment. Optional and generally omitted.</td></tr>
+                    <tr><td>paidByCustomer</td><td>string</td><td>Optional</td><td>(10-digit numeric) Reserved for future use.</td></tr>
+                    <tr><td>contractId</td><td>string</td><td>Optional</td><td>(10-digit numeric) Reserved for future use.</td></tr>
+                    <tr><td>references</td><td>object</td><td>Optional</td><td>User-defined reference values for tracking or internal use.</td></tr>
+                    <tr><td>customerRef1</td><td>string</td><td>Optional</td><td>(Up to 35 characters) Appears on label and in tracking files.</td></tr>
+                    <tr><td>customerRef2</td><td>string</td><td>Optional</td><td>Same as <code>customerRef1</code>. Used as a second reference field.</td></tr>
+                    <tr><td>notifications</td><td>object</td><td>Optional</td><td>Holds email notification settings.</td></tr>
+                    <tr><td>notification</td><td>object</td><td>Mandatory</td><td>Required if <code>notifications</code> is present. Up to 4 allowed. Each holds one email + notification types.</td></tr>
+                    <tr><td>email</td><td>string</td><td>Mandatory</td><td>(Up to 60 chars) Email for tracking updates. Must be valid.</td></tr>
+                    <tr><td>onShipment</td><td>boolean</td><td>Mandatory</td><td>{true, false} Required with <code>notification</code>. Enables shipment updates.</td></tr>
+                    <tr><td>onException</td><td>boolean</td><td>Mandatory</td><td>{true, false} Enables exception-related updates.</td></tr>
+                    <tr><td>onDelivery</td><td>boolean</td><td>Mandatory</td><td>{true, false} Enables delivery updates.</td></tr>
+                    <tr><td>emailSubject</td><td>string</td><td>Optional</td><td>{tracking, customer-ref-1, customer-ref-2}<br>Subject line values:<ul><li>Ship Notification for Item</li><li>Exception Notification for Item</li><li>Delivery Notification for Item</li></ul>Defaults to "TRACKING" with tracking number.</td></tr>
+                  </tbody>
+                </table>
+              sortKey: -1744727995385
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "createPublicKey": true,
+                  "createQrCode": true,
+                  "boxFree": false,
+                  "customerBarcode": "1234567890",
+                  "customerBarcodeType": "2D",
+                  "serviceCode": "DOM.XP",
+                  "returner": {
+                    "name": "Bulma",
+                    "company": "Capsule Corp.",
+                    "domesticAddress": {
+                      "addressLine1": "502 MAIN ST N",
+                      "city": "MONTREAL",
+                      "province": "QC",
+                      "postalCode": "H2B1A0"
+                    }
+                  },
+                  "receiver": {
+                    "name": "Ryuko Saito",
+                    "company": "Kubere",
+                    "email": "test@test.com",
+                    "receiverVoiceNumber": "111-111-1111",
+                    "domesticAddress": {
+                      "addressLine1": "23 jardin private",
+                      "city": "Ottawa",
+                      "province": "ON",
+                      "postalCode": "K1K4T3"
+                    }
+                  },
+                  "parcelCharacteristics": {
+                    "weight": 15,
+                    "dimensions": {
+                      "length": 10,
+                      "width": 10,
+                      "height": 10
+                    }
+                  },
+                  "printPreferences": {
+                    "outputFormat": "8.5x11",
+                    "encoding": "PDF",
+                    "showPackingInstructions": true
+                  },
+                  "settlementInfo": {
+                    "paidByCustomer": "{{ _.paid_by }}",
+                    "contractId": "{{ _['contract-id'] }}"
+                  },
+                  "references": {
+                    "customerRef1": "ref1",
+                    "customerRef2": "ref2"
+                  },
+                  "notifications": {
+                    "notificationsList": [
+                      {
+                        "email": "test@test.com",
+                        "onShipment": true,
+                        "onException": true,
+                        "onDelivery": true
+                      }
+                    ],
+                    "emailSubject": "tracking"
+                  }
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.0.1
+              - name: Accept
+                value: application/json
+                description: ""
+                disabled: false
+              - name: Authorization
+                value: Bearer {{ _.accessToken }}
+                description: ""
+                disabled: false
+              - name: Accept-Language
+                value: en-CA
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{ _.base_url }}/returns/v1/{{ _.mailby }}/{{ _.mobo
+              }}/authorized-returns"
+            name: CreateAuthorizedReturnAndBoxFreeLabelFree
+            meta:
+              id: req_694aba19c05b4496970dc9bc5a0a47e7
+              created: 1743786765358
+              modified: 1773518874515
+              isPrivate: false
+              description: >-
+                <table border="1" cellpadding="6" cellspacing="0"
+                style="border-collapse: collapse; width: 100%; font-family:
+                Arial, sans-serif;">
+                  <thead>
+                    <tr>
+                      <th style="width: 20%;">Element Name</th>
+                      <th style="width: 15%;">Type</th>
+                      <th style="width: 20%;">Required / Optional</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>createPublicKey</td>
+                      <td>boolean</td>
+                      <td>Optional</td>
+                      <td>{true}<br>If set to "true", generates a public URL for the PDF label and includes the link with expiry date in the response. Useful for QR code generation and sharing labels digitally. <br><strong>Note:</strong> 'retail-only = true' overrides this flag. These flags are mutually exclusive.</td>
+                    </tr>
+                    <tr>
+                      <td>createQrCode</td>
+                      <td>boolean</td>
+                      <td>Optional</td>
+                      <td>(true|false)<br>Must be used with <code>createPublicKey=true</code>. Automatically returns the QR code of the public URL.</td>
+                    </tr>
+                    <tr>
+                      <td>boxFree</td>
+                      <td>boolean</td>
+                      <td>Optional</td>
+                      <td>(true|false)<br>Adds "Box-free / Sans emballage" messaging and green QR code. Eligibility rules apply.</td>
+                    </tr>
+                				    <tr>
+                      <td>retailOnly</td>
+                      <td>boolean</td>
+                      <td>Optional</td>
+                      <td>{true}<br>
+                if flag is present and set to 'true', service will not return an
+                artifact link.
+
+
+                Note:
+
+
+                If ‘retailOnly’ flag is present, it will always be true.
+
+                If ‘retailOnly’ flag is not present, pdf label will be given
+                when 2D barcode is scanned by a customer.
+
+                ‘retailOnly = true’ will always take precedence over
+                ‘createPublicKey’, they both are mutually exclusive.</td>
+                    </tr>
+                    <tr>
+                      <td>customerBarcode</td>
+                      <td>string</td>
+                      <td>Optional</td>
+                      <td>(16 alphanumeric)<br>Value to be rendered in the customer info section of the return label.</td>
+                    </tr>
+                    <tr>
+                      <td>customerBarcodeType</td>
+                      <td>string</td>
+                      <td>Optional</td>
+                      <td>(LINEAR | 2D)<br>Type of the barcode. Required if <code>customerBarcode</code> is provided.</td>
+                    </tr>
+                    <tr>
+                      <td>serviceCode</td>
+                      <td>string</td>
+                      <td>Required</td>
+                      <td>Occurs 1-20 times. If omitted, all applicable services are returned.<br><br>
+                        <table border="1" cellpadding="4" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+                          <thead>
+                            <tr>
+                              <th>Service Code</th>
+                              <th>Description</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr><td>DOM.RP</td><td>Regular Parcel</td></tr>
+                            <tr><td>DOM.EP</td><td>Expedited Parcel</td></tr>
+                            <tr><td>DOM.XP</td><td>Xpresspost</td></tr>
+                            <tr><td>DOM.PC</td><td>Priority</td></tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr><td>returner</td><td>object</td><td>Required</td><td>Contains sender info that will appear in the "From" address of the label. Empty fields are removed when formatting.</td></tr>
+                    <tr><td>name</td><td>string</td><td>Required</td><td>(44 alphanumeric) Contact name of the returner.</td></tr>
+                    <tr><td>company</td><td>string</td><td>Optional</td><td>(44 alphanumeric) Company name of the returner.</td></tr>
+                    <tr><td>domesticAddress</td><td>object</td><td>Required</td><td>Address information for the returner. Blank fields are removed in final formatting.</td></tr>
+                    <tr><td>addressLine1</td><td>string</td><td>Required</td><td>(44 alphanumeric)</td></tr>
+                    <tr><td>City</td><td>string</td><td>Required</td><td>(40 alphanumeric)</td></tr>
+                    <tr><td>province</td><td>string</td><td>Required</td><td>(2 characters)</td></tr>
+                    <tr><td>postalCode</td><td>string</td><td>Required</td><td>(A9A9A9 format)</td></tr>
+                    <tr><td>receiver</td><td>object</td><td>Required</td><td>Receiver's destination info. Blank fields removed in label formatting.</td></tr>
+                    <tr><td>name</td><td>string</td><td>Required</td><td>(44 alphanumeric) Contact name of receiver.</td></tr>
+                    <tr><td>company</td><td>string</td><td>Optional</td><td>(44 alphanumeric) Company name of receiver.</td></tr>
+                    <tr><td>email</td><td>string</td><td>Optional</td><td>(60 chars, valid email) Reserved for future use.</td></tr>
+                    <tr><td>receiverVoiceNumber</td><td>string</td><td>Optional</td><td>(up to 25 characters) Receiver phone number. Will not appear on label.</td></tr>
+                    <tr><td>domesticAddress</td><td>object</td><td>Required</td><td>Receiver address. Required if receiver exists. Blank fields are removed for label formatting.</td></tr>
+                    <tr><td>addressLine1</td><td>string</td><td>Required</td><td>(44 alphanumeric)</td></tr>
+                    <tr><td>City</td><td>string</td><td>Required</td><td>(40 alphanumeric)</td></tr>
+                    <tr><td>province</td><td>string</td><td>Required</td><td>(2 characters)</td></tr>
+                    <tr><td>postalCode</td><td>string</td><td>Required</td><td>(A9A9A9 format)</td></tr>
+                    <tr><td>parcelCharacteristics</td><td>object</td><td>Optional</td><td>Information about the physical characteristics of the parcel.</td></tr>
+                    <tr><td>weight</td><td>number</td><td>Optional</td><td>(Pattern 3.3 e.g. 999.999) Total package weight in kg.</td></tr>
+                    <tr><td>dimensions</td><td>object</td><td>Optional</td><td>Parcel dimension information (cm).</td></tr>
+                    <tr><td>length</td><td>number</td><td>Conditionally Required</td><td>(Pattern 3.1 e.g. 999.9) Required if <code>dimensions</code> exists. Improves pricing accuracy.</td></tr>
+                    <tr><td>width</td><td>number</td><td>Conditionally Required</td><td>Same rules as <code>length</code>. Width of the parcel in cm.</td></tr>
+                    <tr><td>height</td><td>number</td><td>Conditionally Required</td><td>Same rules as <code>length</code>. Height of the parcel in cm.</td></tr>
+                    <tr><td>printPreferences</td><td>object</td><td>Optional</td><td>Print preferences for return labels.</td></tr>
+                    <tr><td>outputFormat</td><td>string</td><td>Optional</td><td>(7 alphanumeric) Valid: <code>8.5x11</code>, <code>4x6</code>. Defaults to <code>8.5x11</code>.</td></tr>
+                    <tr><td>encoding</td><td>string</td><td>Optional</td><td>{PDF, ZPL}<br>Defines output format. If ZPL, returned data contains ZPL II printer commands. Used with thermal printers.</td></tr>
+                    <tr><td>showPackingInstructions</td><td>boolean</td><td>Optional</td><td>{true, false} Defaults to true. Indicates whether packing instructions should appear on label.</td></tr>
+                    <tr><td>settlementInfo</td><td>object</td><td>Optional</td><td>Analogous to Create Shipment. Optional and generally omitted.</td></tr>
+                    <tr><td>paidByCustomer</td><td>string</td><td>Optional</td><td>(10-digit numeric) Reserved for future use.</td></tr>
+                    <tr><td>contractId</td><td>string</td><td>Optional</td><td>(10-digit numeric) Reserved for future use.</td></tr>
+                    <tr><td>references</td><td>object</td><td>Optional</td><td>User-defined reference values for tracking or internal use.</td></tr>
+                    <tr><td>customerRef1</td><td>string</td><td>Optional</td><td>(Up to 35 characters) Appears on label and in tracking files.</td></tr>
+                    <tr><td>customerRef2</td><td>string</td><td>Optional</td><td>Same as <code>customerRef1</code>. Used as a second reference field.</td></tr>
+                    <tr><td>notifications</td><td>object</td><td>Optional</td><td>Holds email notification settings.</td></tr>
+                    <tr><td>notification</td><td>object</td><td>Mandatory</td><td>Required if <code>notifications</code> is present. Up to 4 allowed. Each holds one email + notification types.</td></tr>
+                    <tr><td>email</td><td>string</td><td>Mandatory</td><td>(Up to 60 chars) Email for tracking updates. Must be valid.</td></tr>
+                    <tr><td>onShipment</td><td>boolean</td><td>Mandatory</td><td>{true, false} Required with <code>notification</code>. Enables shipment updates.</td></tr>
+                    <tr><td>onException</td><td>boolean</td><td>Mandatory</td><td>{true, false} Enables exception-related updates.</td></tr>
+                    <tr><td>onDelivery</td><td>boolean</td><td>Mandatory</td><td>{true, false} Enables delivery updates.</td></tr>
+                    <tr><td>emailSubject</td><td>string</td><td>Optional</td><td>{tracking, customer-ref-1, customer-ref-2}<br>Subject line values:<ul><li>Ship Notification for Item</li><li>Exception Notification for Item</li><li>Delivery Notification for Item</li></ul>Defaults to "TRACKING" with tracking number.</td></tr>
+                  </tbody>
+                </table>
+              sortKey: -1744727995485
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "createQrCode": true,
+                  "boxFree": true,
+                	"retailOnly": true,
+                  "customerBarcode": "1234567890",
+                  "customerBarcodeType": "2D",
+                  "serviceCode": "DOM.XP",
+                  "returner": {
+                    "name": "Bulma",
+                    "company": "Capsule Corp.",
+                    "domesticAddress": {
+                      "addressLine1": "502 MAIN ST N",
+                      "city": "MONTREAL",
+                      "province": "QC",
+                      "postalCode": "H2B1A0"
+                    }
+                  },
+                  "receiver": {
+                    "name": "Ryuko Saito",
+                    "company": "Kubere",
+                    "email": "test@test.com",
+                    "receiverVoiceNumber": "111-111-1111",
+                    "domesticAddress": {
+                      "addressLine1": "23 jardin private",
+                      "city": "Ottawa",
+                      "province": "ON",
+                      "postalCode": "K1K4T3"
+                    }
+                  },
+                  "parcelCharacteristics": {
+                    "weight": 15,
+                    "dimensions": {
+                      "length": 10,
+                      "width": 10,
+                      "height": 10
+                    }
+                  },
+                  "printPreferences": {
+                    "outputFormat": "8.5x11",
+                    "encoding": "PDF",
+                    "showPackingInstructions": true
+                  },
+                  "settlementInfo": {
+                    "paidByCustomer": "{{ _.paid_by }}",
+                    "contractId": "{{ _['contract-id'] }}"
+                  },
+                  "references": {
+                    "customerRef1": "ref1",
+                    "customerRef2": "ref2"
+                  },
+                  "notifications": {
+                    "notificationsList": [
+                      {
+                        "email": "test@test.com",
+                        "onShipment": true,
+                        "onException": true,
+                        "onDelivery": true
+                      }
+                    ],
+                    "emailSubject": "tracking"
+                  }
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.0.1
+              - name: Accept
+                value: application/json
+                description: ""
+                disabled: false
+              - name: Authorization
+                value: Bearer {{ _.accessToken }}
+                description: ""
+                disabled: false
+              - name: Accept-Language
+                value: en-CA
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{ _.base_url }}/returns/v1/{{ _.mailby }}/{{ _.mobo
+              }}/authorized-returns"
+            name: CreateAuthorizedReturnAndQRCodeRetailOnly
+            meta:
+              id: req_293984c2b1a04367af95fd3952e79afc
+              created: 1769110654046
+              modified: 1773519045210
+              isPrivate: false
+              description: >-
+                <table border="1" cellpadding="6" cellspacing="0"
+                style="border-collapse: collapse; width: 100%; font-family:
+                Arial, sans-serif;">
+                  <thead>
+                    <tr>
+                      <th style="width: 20%;">Element Name</th>
+                      <th style="width: 15%;">Type</th>
+                      <th style="width: 20%;">Required / Optional</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>createPublicKey</td>
+                      <td>boolean</td>
+                      <td>Optional</td>
+                      <td>{true}<br>If set to "true", generates a public URL for the PDF label and includes the link with expiry date in the response. Useful for QR code generation and sharing labels digitally. <br><strong>Note:</strong> 'retail-only = true' overrides this flag. These flags are mutually exclusive.</td>
+                    </tr>
+                    <tr>
+                      <td>createQrCode</td>
+                      <td>boolean</td>
+                      <td>Optional</td>
+                      <td>(true|false)<br>Must be used with <code>createPublicKey=true</code>. Automatically returns the QR code of the public URL.</td>
+                    </tr>
+                    <tr>
+                      <td>boxFree</td>
+                      <td>boolean</td>
+                      <td>Optional</td>
+                      <td>(true|false)<br>Adds "Box-free / Sans emballage" messaging and green QR code. Eligibility rules apply.</td>
+                    </tr>
+                				    <tr>
+                      <td>retailOnly</td>
+                      <td>boolean</td>
+                      <td>Optional</td>
+                      <td>{true}<br>
+                if flag is present and set to 'true', service will not return an
+                artifact link.
+
+
+                Note:
+
+
+                If ‘retailOnly’ flag is present, it will always be true.
+
+                If ‘retailOnly’ flag is not present, pdf label will be given
+                when 2D barcode is scanned by a customer.
+
+                ‘retailOnly = true’ will always take precedence over
+                ‘createPublicKey’, they both are mutually exclusive.</td>
+                    </tr>
+                    <tr>
+                      <td>customerBarcode</td>
+                      <td>string</td>
+                      <td>Optional</td>
+                      <td>(16 alphanumeric)<br>Value to be rendered in the customer info section of the return label.</td>
+                    </tr>
+                    <tr>
+                      <td>customerBarcodeType</td>
+                      <td>string</td>
+                      <td>Optional</td>
+                      <td>(LINEAR | 2D)<br>Type of the barcode. Required if <code>customerBarcode</code> is provided.</td>
+                    </tr>
+                    <tr>
+                      <td>serviceCode</td>
+                      <td>string</td>
+                      <td>Required</td>
+                      <td>Occurs 1-20 times. If omitted, all applicable services are returned.<br><br>
+                        <table border="1" cellpadding="4" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+                          <thead>
+                            <tr>
+                              <th>Service Code</th>
+                              <th>Description</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr><td>DOM.RP</td><td>Regular Parcel</td></tr>
+                            <tr><td>DOM.EP</td><td>Expedited Parcel</td></tr>
+                            <tr><td>DOM.XP</td><td>Xpresspost</td></tr>
+                            <tr><td>DOM.PC</td><td>Priority</td></tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr><td>returner</td><td>object</td><td>Required</td><td>Contains sender info that will appear in the "From" address of the label. Empty fields are removed when formatting.</td></tr>
+                    <tr><td>name</td><td>string</td><td>Required</td><td>(44 alphanumeric) Contact name of the returner.</td></tr>
+                    <tr><td>company</td><td>string</td><td>Optional</td><td>(44 alphanumeric) Company name of the returner.</td></tr>
+                    <tr><td>domesticAddress</td><td>object</td><td>Required</td><td>Address information for the returner. Blank fields are removed in final formatting.</td></tr>
+                    <tr><td>addressLine1</td><td>string</td><td>Required</td><td>(44 alphanumeric)</td></tr>
+                    <tr><td>City</td><td>string</td><td>Required</td><td>(40 alphanumeric)</td></tr>
+                    <tr><td>province</td><td>string</td><td>Required</td><td>(2 characters)</td></tr>
+                    <tr><td>postalCode</td><td>string</td><td>Required</td><td>(A9A9A9 format)</td></tr>
+                    <tr><td>receiver</td><td>object</td><td>Required</td><td>Receiver's destination info. Blank fields removed in label formatting.</td></tr>
+                    <tr><td>name</td><td>string</td><td>Required</td><td>(44 alphanumeric) Contact name of receiver.</td></tr>
+                    <tr><td>company</td><td>string</td><td>Optional</td><td>(44 alphanumeric) Company name of receiver.</td></tr>
+                    <tr><td>email</td><td>string</td><td>Optional</td><td>(60 chars, valid email) Reserved for future use.</td></tr>
+                    <tr><td>receiverVoiceNumber</td><td>string</td><td>Optional</td><td>(up to 25 characters) Receiver phone number. Will not appear on label.</td></tr>
+                    <tr><td>domesticAddress</td><td>object</td><td>Required</td><td>Receiver address. Required if receiver exists. Blank fields are removed for label formatting.</td></tr>
+                    <tr><td>addressLine1</td><td>string</td><td>Required</td><td>(44 alphanumeric)</td></tr>
+                    <tr><td>City</td><td>string</td><td>Required</td><td>(40 alphanumeric)</td></tr>
+                    <tr><td>province</td><td>string</td><td>Required</td><td>(2 characters)</td></tr>
+                    <tr><td>postalCode</td><td>string</td><td>Required</td><td>(A9A9A9 format)</td></tr>
+                    <tr><td>parcelCharacteristics</td><td>object</td><td>Optional</td><td>Information about the physical characteristics of the parcel.</td></tr>
+                    <tr><td>weight</td><td>number</td><td>Optional</td><td>(Pattern 3.3 e.g. 999.999) Total package weight in kg.</td></tr>
+                    <tr><td>dimensions</td><td>object</td><td>Optional</td><td>Parcel dimension information (cm).</td></tr>
+                    <tr><td>length</td><td>number</td><td>Conditionally Required</td><td>(Pattern 3.1 e.g. 999.9) Required if <code>dimensions</code> exists. Improves pricing accuracy.</td></tr>
+                    <tr><td>width</td><td>number</td><td>Conditionally Required</td><td>Same rules as <code>length</code>. Width of the parcel in cm.</td></tr>
+                    <tr><td>height</td><td>number</td><td>Conditionally Required</td><td>Same rules as <code>length</code>. Height of the parcel in cm.</td></tr>
+                    <tr><td>printPreferences</td><td>object</td><td>Optional</td><td>Print preferences for return labels.</td></tr>
+                    <tr><td>outputFormat</td><td>string</td><td>Optional</td><td>(7 alphanumeric) Valid: <code>8.5x11</code>, <code>4x6</code>. Defaults to <code>8.5x11</code>.</td></tr>
+                    <tr><td>encoding</td><td>string</td><td>Optional</td><td>{PDF, ZPL}<br>Defines output format. If ZPL, returned data contains ZPL II printer commands. Used with thermal printers.</td></tr>
+                    <tr><td>showPackingInstructions</td><td>boolean</td><td>Optional</td><td>{true, false} Defaults to true. Indicates whether packing instructions should appear on label.</td></tr>
+                    <tr><td>settlementInfo</td><td>object</td><td>Optional</td><td>Analogous to Create Shipment. Optional and generally omitted.</td></tr>
+                    <tr><td>paidByCustomer</td><td>string</td><td>Optional</td><td>(10-digit numeric) Reserved for future use.</td></tr>
+                    <tr><td>contractId</td><td>string</td><td>Optional</td><td>(10-digit numeric) Reserved for future use.</td></tr>
+                    <tr><td>references</td><td>object</td><td>Optional</td><td>User-defined reference values for tracking or internal use.</td></tr>
+                    <tr><td>customerRef1</td><td>string</td><td>Optional</td><td>(Up to 35 characters) Appears on label and in tracking files.</td></tr>
+                    <tr><td>customerRef2</td><td>string</td><td>Optional</td><td>Same as <code>customerRef1</code>. Used as a second reference field.</td></tr>
+                    <tr><td>notifications</td><td>object</td><td>Optional</td><td>Holds email notification settings.</td></tr>
+                    <tr><td>notification</td><td>object</td><td>Mandatory</td><td>Required if <code>notifications</code> is present. Up to 4 allowed. Each holds one email + notification types.</td></tr>
+                    <tr><td>email</td><td>string</td><td>Mandatory</td><td>(Up to 60 chars) Email for tracking updates. Must be valid.</td></tr>
+                    <tr><td>onShipment</td><td>boolean</td><td>Mandatory</td><td>{true, false} Required with <code>notification</code>. Enables shipment updates.</td></tr>
+                    <tr><td>onException</td><td>boolean</td><td>Mandatory</td><td>{true, false} Enables exception-related updates.</td></tr>
+                    <tr><td>onDelivery</td><td>boolean</td><td>Mandatory</td><td>{true, false} Enables delivery updates.</td></tr>
+                    <tr><td>emailSubject</td><td>string</td><td>Optional</td><td>{tracking, customer-ref-1, customer-ref-2}<br>Subject line values:<ul><li>Ship Notification for Item</li><li>Exception Notification for Item</li><li>Delivery Notification for Item</li></ul>Defaults to "TRACKING" with tracking number.</td></tr>
+                  </tbody>
+                </table>
+              sortKey: -1739200950568.6875
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "createQrCode": true,
+                	"retailOnly": true,
+                  "boxFree": false,
+                  "customerBarcode": "1234567890",
+                  "customerBarcodeType": "2D",
+                  "serviceCode": "DOM.XP",
+                  "returner": {
+                    "name": "Bulma",
+                    "company": "Capsule Corp.",
+                    "domesticAddress": {
+                      "addressLine1": "502 MAIN ST N",
+                      "city": "MONTREAL",
+                      "province": "QC",
+                      "postalCode": "H2B1A0"
+                    }
+                  },
+                  "receiver": {
+                    "name": "Ryuko Saito",
+                    "company": "Kubere",
+                    "email": "test@test.com",
+                    "receiverVoiceNumber": "111-111-1111",
+                    "domesticAddress": {
+                      "addressLine1": "23 jardin private",
+                      "city": "Ottawa",
+                      "province": "ON",
+                      "postalCode": "K1K4T3"
+                    }
+                  },
+                  "parcelCharacteristics": {
+                    "weight": 15,
+                    "dimensions": {
+                      "length": 10,
+                      "width": 10,
+                      "height": 10
+                    }
+                  },
+                  "printPreferences": {
+                    "outputFormat": "8.5x11",
+                    "encoding": "PDF",
+                    "showPackingInstructions": true
+                  },
+                  "settlementInfo": {
+                    "paidByCustomer": "{{ _.paid_by }}",
+                    "contractId": "{{ _['contract-id'] }}"
+                  },
+                  "references": {
+                    "customerRef1": "ref1",
+                    "customerRef2": "ref2"
+                  },
+                  "notifications": {
+                    "notificationsList": [
+                      {
+                        "email": "test@test.com",
+                        "onShipment": true,
+                        "onException": true,
+                        "onDelivery": true
+                      }
+                    ],
+                    "emailSubject": "tracking"
+                  }
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.0.1
+              - name: Accept
+                value: application/json
+                description: ""
+                disabled: false
+              - name: Authorization
+                value: Bearer {{ _.accessToken }}
+                description: ""
+                disabled: false
+              - name: Accept-Language
+                value: en-CA
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Open Return Template
+        meta:
+          id: fld_64e4021cf449440095e805e0a67dcfb7
+          created: 1744728066140
+          modified: 1773690917682
+          sortKey: -1744728066140
+          description: ""
+        children:
+          - url: "{{ _.base_url }}/returns/v1/{{ _.mailby }}/{{ _.mobo }}/open-returns"
+            name: Create Open Return Template
+            meta:
+              id: req_6052051a0cea4eb9afd59d5d30fb4b06
+              created: 1744728081162
+              modified: 1773683691095
+              isPrivate: false
+              description: >
+                <div>
+                  <p>
+                    Creates generic labels for retrieval and printing. The sender's address and package weight are unknown. Each label has a unique barcode, but other data remains the same. Labels can be distributed as part of the original shipment or sent to a specific individual.
+                  </p>
+
+                  <p><strong>Notes:</strong></p>
+                  <ul>
+                    <li>
+                      Not all labels are generated initially. Instead, a subset of labels will be created and available for retrieval from the drop-down list. As labels run out and near zero, new labels can be manually generated for replenishment.
+                    </li>
+                    <li>The maximum number of pending labels is <strong>100,000</strong>.</li>
+                    <li>The maximum number of models is <strong>100</strong>.</li>
+                    <li>Fetching the next generic artifact for returned shipments will fetch the next available artifact.</li>
+                  </ul>
+                </div>
+
+                <br />
+
+                <table border="1" cellpadding="10" cellspacing="0"
+                style="border-collapse: separate; border-spacing: 0 10px; width:
+                100%;">
+                  <thead>
+                    <tr>
+                      <th style="width: 20%;">Element Name</th>
+                      <th style="width: 15%;">Type</th>
+                      <th style="width: 20%;">Required / Optional</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><p>maxNumberOfArtifacts</p></td>
+                      <td><p>integer</p></td>
+                      <td><p>Required</p></td>
+                      <td>
+                        <p>Maximum number of return labels that can be generated and retrieved using the template.</p>
+                        <p>Must be a numeric value between 1 and 100,000.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><p>serviceCode</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Required</p></td>
+                      <td>
+                        <p>32-character alphanumeric. Used for domestic returns only.</p>
+                        <ul>
+                          <li>DOM.RP – Regular Parcel</li>
+                          <li>DOM.EP – Expedited Parcel</li>
+                          <li>DOM.XP – Xpresspost</li>
+                          <li>DOM.PC – Priority</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><p>receiver</p></td>
+                      <td><p>object</p></td>
+                      <td><p>Required</p></td>
+                      <td>
+                        <p>Information for the "To" address. Blank fields are omitted during label formatting.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><p>name</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Required</p></td>
+                      <td><p>Receiver’s name (up to 44 characters).</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>company</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Optional</p></td>
+                      <td><p>Company name of the receiver (up to 44 characters).</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>domesticAddress</p></td>
+                      <td><p>object</p></td>
+                      <td><p>Required</p></td>
+                      <td><p>Receiver's address details. Blank fields are removed during formatting.</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>addressLine1</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Required</p></td>
+                      <td><p>Main street address of the receiver (up to 44 characters).</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>addressLine2</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Optional</p></td>
+                      <td><p>Additional address information (up to 44 characters).</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>city</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Required</p></td>
+                      <td><p>City of the receiver (up to 40 characters).</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>province</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Required</p></td>
+                      <td><p>2-character province code of the receiver.</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>postalCode</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Required</p></td>
+                      <td><p>Receiver's postal code in Canadian format (A9A9A9).</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>printPreferences</p></td>
+                      <td><p>object</p></td>
+                      <td><p>Optional</p></td>
+                      <td><p>Preferences for label printing.</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>outputFormat</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Optional</p></td>
+                      <td><p>Values: <code>8.5x11</code> (default), <code>4x6</code>. The <code>3x5</code> format is deprecated and converted to 4x6.</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>customerInputType</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Optional</p></td>
+                      <td>
+                        <p>Used to print a data entry field for customers on the label. Applies to 4x6 and 8.5x11.</p>
+                        <ul>
+                          <li>INVOICE – Invoice No</li>
+                          <li>ITEM – Item No</li>
+                          <li>ORDER – Order No</li>
+                          <li>PART – Part No</li>
+                          <li>PO – Purchase Order No</li>
+                          <li>RETURN – Return No</li>
+                          <li>RSA – Return Service Authorization No</li>
+                          <li>SERIAL – Serial No</li>
+                          <li>SKU – SKU No</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><p>encoding</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Optional</p></td>
+                      <td><p>Values: <code>PDF</code> (default), <code>ZPL</code>. ZPL requires thermal paper and supports truncation.</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>showPackingInstructions</p></td>
+                      <td><p>boolean</p></td>
+                      <td><p>Optional</p></td>
+                      <td><p>Whether to display packing instructions. Defaults to <code>false</code>.</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>settlementInfo</p></td>
+                      <td><p>object</p></td>
+                      <td><p>Required</p></td>
+                      <td><p>Contains your commercial contract number for verification.</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>contractId</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Required</p></td>
+                      <td><p>10-digit numeric. Required for Open Returns service. Only available to commercial customers with a volume agreement.</p></td>
+                    </tr>
+                  </tbody>
+                </table>
+              sortKey: -1744819001322
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"maxNumberOfArtifacts": 10,
+                	"serviceCode": "DOM.EP",
+                	"receiver": {
+                		"name": "Ed Smith",
+                		"company": "EdCo",
+                		"domesticAddress": {
+                			"addressLine1": "123 Main St",
+                			"addressLine2": "Ste 17",
+                			"city": "Ottawa",
+                			"province": "ON",
+                			"postalCode": "K1K1K1"
+                		}
+                	},
+                	"printPreferences": {
+                		"outputFormat": "4x6",
+                		"customerInputType": "order",
+                		"encoding": "PDF",
+                		"showPackingInstructions": true
+                	},
+                	"settlementInfo": {
+                		"contractId": "{{ _['contract-id'] }}",
+                		"intendedMethodOfPayment": "Account"
+                	}
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.0.1
+              - name: Accept
+                value: application/json
+                description: ""
+                disabled: false
+              - name: Authorization
+                value: Bearer {{ _.accessToken }}
+                description: ""
+                disabled: false
+              - name: Accept-Language
+                value: en-CA
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{ _.base_url }}/returns/v1/{{ _.mailby }}/{{ _.mobo }}/open-returns"
+            name: Get Open Return Templates
+            meta:
+              id: req_a6812046ead8476084b402b4b01e3a36
+              created: 1744815668563
+              modified: 1773690622947
+              isPrivate: false
+              description: >
+                <table border="1" cellpadding="10" cellspacing="0"
+                style="border-collapse: separate; border-spacing: 0 10px; width:
+                100%;">
+                  <thead>
+                    <tr>
+                      <th style="width: 20%;">Element Name</th>
+                      <th style="width: 15%;">Type</th>
+                      <th style="width: 20%;">Required / Optional</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><p>maxNumberOfArtifacts</p></td>
+                      <td><p>integer</p></td>
+                      <td><p>Required</p></td>
+                      <td>
+                        <p>Maximum number of return labels that can be generated and retrieved using the template.</p>
+                        <p>Must be a numeric value between 1 and 100,000.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><p>serviceCode</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Required</p></td>
+                      <td>
+                        <p>32-character alphanumeric. Used for domestic returns only.</p>
+                        <ul>
+                          <li>DOM.RP – Regular Parcel</li>
+                          <li>DOM.EP – Expedited Parcel</li>
+                          <li>DOM.XP – Xpresspost</li>
+                          <li>DOM.PC – Priority</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><p>receiver</p></td>
+                      <td><p>object</p></td>
+                      <td><p>Required</p></td>
+                      <td>
+                        <p>Information for the "To" address. Blank fields are omitted during label formatting.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><p>name</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Required</p></td>
+                      <td><p>Receiver’s name (up to 44 characters).</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>company</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Optional</p></td>
+                      <td><p>Company name of the receiver (up to 44 characters).</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>domesticAddress</p></td>
+                      <td><p>object</p></td>
+                      <td><p>Required</p></td>
+                      <td><p>Receiver's address details. Blank fields are removed during formatting.</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>addressLine1</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Required</p></td>
+                      <td><p>Main street address of the receiver (up to 44 characters).</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>addressLine2</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Optional</p></td>
+                      <td><p>Additional address information (up to 44 characters).</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>city</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Required</p></td>
+                      <td><p>City of the receiver (up to 40 characters).</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>province</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Required</p></td>
+                      <td><p>2-character province code of the receiver.</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>postalCode</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Required</p></td>
+                      <td><p>Receiver's postal code in Canadian format (A9A9A9).</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>printPreferences</p></td>
+                      <td><p>object</p></td>
+                      <td><p>Optional</p></td>
+                      <td><p>Preferences for label printing.</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>outputFormat</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Optional</p></td>
+                      <td><p>Values: <code>8.5x11</code> (default), <code>4x6</code>. The <code>3x5</code> format is deprecated and converted to 4x6.</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>customerInputType</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Optional</p></td>
+                      <td>
+                        <p>Used to print a data entry field for customers on the label. Applies to 4x6 and 8.5x11.</p>
+                        <ul>
+                          <li>INVOICE – Invoice No</li>
+                          <li>ITEM – Item No</li>
+                          <li>ORDER – Order No</li>
+                          <li>PART – Part No</li>
+                          <li>PO – Purchase Order No</li>
+                          <li>RETURN – Return No</li>
+                          <li>RSA – Return Service Authorization No</li>
+                          <li>SERIAL – Serial No</li>
+                          <li>SKU – SKU No</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><p>encoding</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Optional</p></td>
+                      <td><p>Values: <code>PDF</code> (default), <code>ZPL</code>. ZPL requires thermal paper and supports truncation.</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>showPackingInstructions</p></td>
+                      <td><p>boolean</p></td>
+                      <td><p>Optional</p></td>
+                      <td><p>Whether to display packing instructions. Defaults to <code>false</code>.</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>settlementInfo</p></td>
+                      <td><p>object</p></td>
+                      <td><p>Required</p></td>
+                      <td><p>Contains your commercial contract number for verification.</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>contractId</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Required</p></td>
+                      <td><p>10-digit numeric. Required for Open Returns service. Only available to commercial customers with a volume agreement.</p></td>
+                    </tr>
+                  </tbody>
+                </table>
+              sortKey: -1744819001297
+            method: GET
+            body:
+              mimeType: application/json
+              text: ""
+            headers:
+              - name: User-Agent
+                value: insomnia/11.0.1
+              - name: Accept
+                value: application/json
+                description: ""
+                disabled: false
+              - name: Authorization
+                value: Bearer {{ _.accessToken }}
+                description: ""
+                disabled: false
+              - name: Accept-Language
+                value: en-CA
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{ _.base_url }}/returns/v1/{{ _.mailby }}/{{ _.mobo
+              }}/open-returns/646301773689660661/artifact"
+            name: Retrieve Next Open Return Artifact
+            meta:
+              id: req_0a93f72282db48ed989758a157470553
+              created: 1744818032250
+              modified: 1773690610692
+              isPrivate: false
+              description: >
+                <div>
+                  <p>
+                Used to retrieve the next available artifact (label) associated
+                with an open return template.
+                  </p>
+                </div>
+
+                <br />
+
+                <table border="1" cellpadding="10" cellspacing="0"
+                style="border-collapse: separate; border-spacing: 0 10px; width:
+                100%;">
+                  <thead>
+                    <tr>
+                      <th style="width: 20%;">Element Name</th>
+                      <th style="width: 15%;">Type</th>
+                      <th style="width: 20%;">Required / Optional</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><p>maxNumberOfArtifacts</p></td>
+                      <td><p>integer</p></td>
+                      <td><p>Required</p></td>
+                      <td>
+                        <p>Maximum number of return labels that can be generated and retrieved using the template.</p>
+                        <p>Must be a numeric value between 1 and 100,000.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><p>serviceCode</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Required</p></td>
+                      <td>
+                        <p>32-character alphanumeric. Used for domestic returns only.</p>
+                        <ul>
+                          <li>DOM.RP – Regular Parcel</li>
+                          <li>DOM.EP – Expedited Parcel</li>
+                          <li>DOM.XP – Xpresspost</li>
+                          <li>DOM.PC – Priority</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><p>receiver</p></td>
+                      <td><p>object</p></td>
+                      <td><p>Required</p></td>
+                      <td>
+                        <p>Information for the "To" address. Blank fields are omitted during label formatting.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><p>name</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Required</p></td>
+                      <td><p>Receiver’s name (up to 44 characters).</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>company</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Optional</p></td>
+                      <td><p>Company name of the receiver (up to 44 characters).</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>domesticAddress</p></td>
+                      <td><p>object</p></td>
+                      <td><p>Required</p></td>
+                      <td><p>Receiver's address details. Blank fields are removed during formatting.</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>addressLine1</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Required</p></td>
+                      <td><p>Main street address of the receiver (up to 44 characters).</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>addressLine2</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Optional</p></td>
+                      <td><p>Additional address information (up to 44 characters).</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>city</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Required</p></td>
+                      <td><p>City of the receiver (up to 40 characters).</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>province</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Required</p></td>
+                      <td><p>2-character province code of the receiver.</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>postalCode</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Required</p></td>
+                      <td><p>Receiver's postal code in Canadian format (A9A9A9).</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>printPreferences</p></td>
+                      <td><p>object</p></td>
+                      <td><p>Optional</p></td>
+                      <td><p>Preferences for label printing.</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>outputFormat</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Optional</p></td>
+                      <td><p>Values: <code>8.5x11</code> (default), <code>4x6</code>. The <code>3x5</code> format is deprecated and converted to 4x6.</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>customerInputType</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Optional</p></td>
+                      <td>
+                        <p>Used to print a data entry field for customers on the label. Applies to 4x6 and 8.5x11.</p>
+                        <ul>
+                          <li>INVOICE – Invoice No</li>
+                          <li>ITEM – Item No</li>
+                          <li>ORDER – Order No</li>
+                          <li>PART – Part No</li>
+                          <li>PO – Purchase Order No</li>
+                          <li>RETURN – Return No</li>
+                          <li>RSA – Return Service Authorization No</li>
+                          <li>SERIAL – Serial No</li>
+                          <li>SKU – SKU No</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><p>encoding</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Optional</p></td>
+                      <td><p>Values: <code>PDF</code> (default), <code>ZPL</code>. ZPL requires thermal paper and supports truncation.</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>showPackingInstructions</p></td>
+                      <td><p>boolean</p></td>
+                      <td><p>Optional</p></td>
+                      <td><p>Whether to display packing instructions. Defaults to <code>false</code>.</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>settlementInfo</p></td>
+                      <td><p>object</p></td>
+                      <td><p>Required</p></td>
+                      <td><p>Contains your commercial contract number for verification.</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>contractId</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Required</p></td>
+                      <td><p>10-digit numeric. Required for Open Returns service. Only available to commercial customers with a volume agreement.</p></td>
+                    </tr>
+                  </tbody>
+                </table>
+              sortKey: -1744819001272
+            method: GET
+            body:
+              mimeType: application/json
+              text: ""
+            headers:
+              - name: User-Agent
+                value: insomnia/11.0.1
+              - name: Accept
+                value: application/pdf
+                description: ""
+                disabled: false
+              - name: Authorization
+                value: Bearer {{ _.accessToken }}
+                description: ""
+                disabled: false
+              - name: Accept-Language
+                value: en-CA
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{ _.base_url }}/returns/v1/{{ _.mailby }}/{{ _.mobo
+              }}/open-returns/646301773689660661"
+            name: Get Open Return Template
+            meta:
+              id: req_4d4c510928474315966a532cbba7da86
+              created: 1744818356116
+              modified: 1773690698033
+              isPrivate: false
+              description: >
+                <table border="1" cellpadding="10" cellspacing="0"
+                style="border-collapse: separate; border-spacing: 0 10px; width:
+                100%;">
+                  <thead>
+                    <tr>
+                      <th style="width: 20%;">Element Name</th>
+                      <th style="width: 15%;">Type</th>
+                      <th style="width: 20%;">Required / Optional</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><p>maxNumberOfArtifacts</p></td>
+                      <td><p>integer</p></td>
+                      <td><p>Required</p></td>
+                      <td>
+                        <p>Maximum number of return labels that can be generated and retrieved using the template.</p>
+                        <p>Must be a numeric value between 1 and 100,000.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><p>serviceCode</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Required</p></td>
+                      <td>
+                        <p>32-character alphanumeric. Used for domestic returns only.</p>
+                        <ul>
+                          <li>DOM.RP – Regular Parcel</li>
+                          <li>DOM.EP – Expedited Parcel</li>
+                          <li>DOM.XP – Xpresspost</li>
+                          <li>DOM.PC – Priority</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><p>receiver</p></td>
+                      <td><p>object</p></td>
+                      <td><p>Required</p></td>
+                      <td>
+                        <p>Information for the "To" address. Blank fields are omitted during label formatting.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><p>name</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Required</p></td>
+                      <td><p>Receiver’s name (up to 44 characters).</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>company</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Optional</p></td>
+                      <td><p>Company name of the receiver (up to 44 characters).</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>domesticAddress</p></td>
+                      <td><p>object</p></td>
+                      <td><p>Required</p></td>
+                      <td><p>Receiver's address details. Blank fields are removed during formatting.</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>addressLine1</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Required</p></td>
+                      <td><p>Main street address of the receiver (up to 44 characters).</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>addressLine2</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Optional</p></td>
+                      <td><p>Additional address information (up to 44 characters).</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>city</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Required</p></td>
+                      <td><p>City of the receiver (up to 40 characters).</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>province</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Required</p></td>
+                      <td><p>2-character province code of the receiver.</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>postalCode</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Required</p></td>
+                      <td><p>Receiver's postal code in Canadian format (A9A9A9).</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>printPreferences</p></td>
+                      <td><p>object</p></td>
+                      <td><p>Optional</p></td>
+                      <td><p>Preferences for label printing.</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>outputFormat</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Optional</p></td>
+                      <td><p>Values: <code>8.5x11</code> (default), <code>4x6</code>. The <code>3x5</code> format is deprecated and converted to 4x6.</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>customerInputType</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Optional</p></td>
+                      <td>
+                        <p>Used to print a data entry field for customers on the label. Applies to 4x6 and 8.5x11.</p>
+                        <ul>
+                          <li>INVOICE – Invoice No</li>
+                          <li>ITEM – Item No</li>
+                          <li>ORDER – Order No</li>
+                          <li>PART – Part No</li>
+                          <li>PO – Purchase Order No</li>
+                          <li>RETURN – Return No</li>
+                          <li>RSA – Return Service Authorization No</li>
+                          <li>SERIAL – Serial No</li>
+                          <li>SKU – SKU No</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><p>encoding</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Optional</p></td>
+                      <td><p>Values: <code>PDF</code> (default), <code>ZPL</code>. ZPL requires thermal paper and supports truncation.</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>showPackingInstructions</p></td>
+                      <td><p>boolean</p></td>
+                      <td><p>Optional</p></td>
+                      <td><p>Whether to display packing instructions. Defaults to <code>false</code>.</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>settlementInfo</p></td>
+                      <td><p>object</p></td>
+                      <td><p>Required</p></td>
+                      <td><p>Contains your commercial contract number for verification.</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>contractId</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Required</p></td>
+                      <td><p>10-digit numeric. Required for Open Returns service. Only available to commercial customers with a volume agreement.</p></td>
+                    </tr>
+                  </tbody>
+                </table>
+              sortKey: -1744819001247
+            method: GET
+            body:
+              mimeType: application/json
+              text: ""
+            headers:
+              - name: User-Agent
+                value: insomnia/11.0.1
+              - name: Accept
+                value: application/json
+                description: ""
+                disabled: false
+              - name: Authorization
+                value: Bearer {{ _.accessToken }}
+                description: ""
+                disabled: false
+              - name: Accept-Language
+                value: en-CA
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{ _.base_url }}/returns/v1/{{ _.mailby }}/{{ _.mobo
+              }}/open-returns/933231773690859090"
+            name: Delete Open Return Template
+            meta:
+              id: req_e850d85db330434796c02be42bb25e5b
+              created: 1744818501373
+              modified: 1773690874647
+              isPrivate: false
+              description: >
+                <div>
+                	<p>
+                		Used to delete an existing open return template.
+                	</p>
+                	</div>
+                	<br />
+
+                <table border="1" cellpadding="10" cellspacing="0"
+                style="border-collapse: separate; border-spacing: 0 10px; width:
+                100%;">
+                  <thead>
+                    <tr>
+                      <th style="width: 20%;">Element Name</th>
+                      <th style="width: 15%;">Type</th>
+                      <th style="width: 20%;">Required / Optional</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><p>maxNumberOfArtifacts</p></td>
+                      <td><p>integer</p></td>
+                      <td><p>Required</p></td>
+                      <td>
+                        <p>Maximum number of return labels that can be generated and retrieved using the template.</p>
+                        <p>Must be a numeric value between 1 and 100,000.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><p>serviceCode</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Required</p></td>
+                      <td>
+                        <p>32-character alphanumeric. Used for domestic returns only.</p>
+                        <ul>
+                          <li>DOM.RP – Regular Parcel</li>
+                          <li>DOM.EP – Expedited Parcel</li>
+                          <li>DOM.XP – Xpresspost</li>
+                          <li>DOM.PC – Priority</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><p>receiver</p></td>
+                      <td><p>object</p></td>
+                      <td><p>Required</p></td>
+                      <td>
+                        <p>Information for the "To" address. Blank fields are omitted during label formatting.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><p>name</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Required</p></td>
+                      <td><p>Receiver’s name (up to 44 characters).</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>company</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Optional</p></td>
+                      <td><p>Company name of the receiver (up to 44 characters).</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>domesticAddress</p></td>
+                      <td><p>object</p></td>
+                      <td><p>Required</p></td>
+                      <td><p>Receiver's address details. Blank fields are removed during formatting.</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>addressLine1</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Required</p></td>
+                      <td><p>Main street address of the receiver (up to 44 characters).</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>addressLine2</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Optional</p></td>
+                      <td><p>Additional address information (up to 44 characters).</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>city</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Required</p></td>
+                      <td><p>City of the receiver (up to 40 characters).</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>province</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Required</p></td>
+                      <td><p>2-character province code of the receiver.</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>postalCode</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Required</p></td>
+                      <td><p>Receiver's postal code in Canadian format (A9A9A9).</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>printPreferences</p></td>
+                      <td><p>object</p></td>
+                      <td><p>Optional</p></td>
+                      <td><p>Preferences for label printing.</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>outputFormat</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Optional</p></td>
+                      <td><p>Values: <code>8.5x11</code> (default), <code>4x6</code>. The <code>3x5</code> format is deprecated and converted to 4x6.</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>customerInputType</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Optional</p></td>
+                      <td>
+                        <p>Used to print a data entry field for customers on the label. Applies to 4x6 and 8.5x11.</p>
+                        <ul>
+                          <li>INVOICE – Invoice No</li>
+                          <li>ITEM – Item No</li>
+                          <li>ORDER – Order No</li>
+                          <li>PART – Part No</li>
+                          <li>PO – Purchase Order No</li>
+                          <li>RETURN – Return No</li>
+                          <li>RSA – Return Service Authorization No</li>
+                          <li>SERIAL – Serial No</li>
+                          <li>SKU – SKU No</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><p>encoding</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Optional</p></td>
+                      <td><p>Values: <code>PDF</code> (default), <code>ZPL</code>. ZPL requires thermal paper and supports truncation.</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>showPackingInstructions</p></td>
+                      <td><p>boolean</p></td>
+                      <td><p>Optional</p></td>
+                      <td><p>Whether to display packing instructions. Defaults to <code>false</code>.</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>settlementInfo</p></td>
+                      <td><p>object</p></td>
+                      <td><p>Required</p></td>
+                      <td><p>Contains your commercial contract number for verification.</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>contractId</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Required</p></td>
+                      <td><p>10-digit numeric. Required for Open Returns service. Only available to commercial customers with a volume agreement.</p></td>
+                    </tr>
+                  </tbody>
+                </table>
+              sortKey: -1744819001234.5
+            method: DELETE
+            body:
+              mimeType: application/json
+              text: ""
+            headers:
+              - name: User-Agent
+                value: insomnia/11.0.1
+              - name: Accept
+                value: application/vnd.cpc.apic.openreturn+json
+                description: ""
+                disabled: false
+              - name: Authorization
+                value: Bearer {{ _.accessToken }}
+                description: ""
+                disabled: false
+              - name: acc
+                value: en-CA
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{ _.base_url }}/returns/v1/{{ _.mailby }}/{{ _.mobo
+              }}/open-returns/646301773689660661/details"
+            name: Get Open Return Template Details
+            meta:
+              id: req_c13e190726f84ab5bb227e677c4b7714
+              created: 1744818580512
+              modified: 1773690735728
+              isPrivate: false
+              description: >
+                <div>
+                  <p>
+                Used to retrieve the information you originally provided when
+                you called Create Open Return Template to create the template
+                (e.g. the number of labels you specified for this template; the
+                receiver). This call also provides the number of remaining
+                labels for this template.
+
+                </div>
+                  </p>
+
+                <br />
+
+                <table border="1" cellpadding="10" cellspacing="0"
+                style="border-collapse: separate; border-spacing: 0 10px; width:
+                100%;">
+                  <thead>
+                    <tr>
+                      <th style="width: 20%;">Element Name</th>
+                      <th style="width: 15%;">Type</th>
+                      <th style="width: 20%;">Required / Optional</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><p>maxNumberOfArtifacts</p></td>
+                      <td><p>integer</p></td>
+                      <td><p>Required</p></td>
+                      <td>
+                        <p>Maximum number of return labels that can be generated and retrieved using the template.</p>
+                        <p>Must be a numeric value between 1 and 100,000.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><p>serviceCode</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Required</p></td>
+                      <td>
+                        <p>32-character alphanumeric. Used for domestic returns only.</p>
+                        <ul>
+                          <li>DOM.RP – Regular Parcel</li>
+                          <li>DOM.EP – Expedited Parcel</li>
+                          <li>DOM.XP – Xpresspost</li>
+                          <li>DOM.PC – Priority</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><p>receiver</p></td>
+                      <td><p>object</p></td>
+                      <td><p>Required</p></td>
+                      <td>
+                        <p>Information for the "To" address. Blank fields are omitted during label formatting.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><p>name</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Required</p></td>
+                      <td><p>Receiver’s name (up to 44 characters).</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>company</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Optional</p></td>
+                      <td><p>Company name of the receiver (up to 44 characters).</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>domesticAddress</p></td>
+                      <td><p>object</p></td>
+                      <td><p>Required</p></td>
+                      <td><p>Receiver's address details. Blank fields are removed during formatting.</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>addressLine1</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Required</p></td>
+                      <td><p>Main street address of the receiver (up to 44 characters).</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>addressLine2</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Optional</p></td>
+                      <td><p>Additional address information (up to 44 characters).</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>city</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Required</p></td>
+                      <td><p>City of the receiver (up to 40 characters).</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>province</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Required</p></td>
+                      <td><p>2-character province code of the receiver.</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>postalCode</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Required</p></td>
+                      <td><p>Receiver's postal code in Canadian format (A9A9A9).</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>printPreferences</p></td>
+                      <td><p>object</p></td>
+                      <td><p>Optional</p></td>
+                      <td><p>Preferences for label printing.</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>outputFormat</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Optional</p></td>
+                      <td><p>Values: <code>8.5x11</code> (default), <code>4x6</code>. The <code>3x5</code> format is deprecated and converted to 4x6.</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>customerInputType</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Optional</p></td>
+                      <td>
+                        <p>Used to print a data entry field for customers on the label. Applies to 4x6 and 8.5x11.</p>
+                        <ul>
+                          <li>INVOICE – Invoice No</li>
+                          <li>ITEM – Item No</li>
+                          <li>ORDER – Order No</li>
+                          <li>PART – Part No</li>
+                          <li>PO – Purchase Order No</li>
+                          <li>RETURN – Return No</li>
+                          <li>RSA – Return Service Authorization No</li>
+                          <li>SERIAL – Serial No</li>
+                          <li>SKU – SKU No</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><p>encoding</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Optional</p></td>
+                      <td><p>Values: <code>PDF</code> (default), <code>ZPL</code>. ZPL requires thermal paper and supports truncation.</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>showPackingInstructions</p></td>
+                      <td><p>boolean</p></td>
+                      <td><p>Optional</p></td>
+                      <td><p>Whether to display packing instructions. Defaults to <code>false</code>.</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>settlementInfo</p></td>
+                      <td><p>object</p></td>
+                      <td><p>Required</p></td>
+                      <td><p>Contains your commercial contract number for verification.</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>contractId</p></td>
+                      <td><p>string</p></td>
+                      <td><p>Required</p></td>
+                      <td><p>10-digit numeric. Required for Open Returns service. Only available to commercial customers with a volume agreement.</p></td>
+                    </tr>
+                  </tbody>
+                </table>
+              sortKey: -1744819001222
+            method: GET
+            body:
+              mimeType: application/json
+              text: ""
+            headers:
+              - name: User-Agent
+                value: insomnia/11.0.1
+              - name: Accept
+                value: application/json
+                description: ""
+                disabled: false
+              - name: Authorization
+                value: Bearer {{ _.accessToken }}
+                description: ""
+                disabled: false
+              - name: Accept-Language
+                value: en-CA
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+  - name: ServiceInfo
+    meta:
+      id: fld_abb85b2b1ed54616a8ceb8f3bf757082
+      created: 1744819333759
+      modified: 1762453649512
+      sortKey: -1699985604054
+      description: ""
+  - name: Customer Information Service
+    meta:
+      id: fld_a295ca2c54474c83b28bfbd7ca1dc2c2
+      created: 1745935334729
+      modified: 1745935378123
+      sortKey: -1699862629371.25
+      description: ""
+  - name: Pickup API's
+    meta:
+      id: fld_76b7ea9719c744bb9312483b3475374a
+      created: 1750260142113
+      modified: 1773848687161
+      sortKey: -1699865142614.8125
+      description: ""
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_da316603ff6f4008a62741f3096b29d9
+    created: 1708476872957
+    modified: 1779827747415
+environments:
+  name: Canada Post Environments
+  meta:
+    id: env_49d189a881404bb4967c96a84ca4c630
+    created: 1708476872955
+    modified: 1787164663882
+    isPrivate: false
+  data:
+    "": ""
+  subEnvironments:
+    - name: Production
+      meta:
+        id: env_cda24f0e6edd421997171f0fe534316c
+        created: 1772632419348
+        modified: 1779972917103
+        isPrivate: true
+        sortKey: 1772632419348
+      data:
+        base_url: https://api.canadapost-postescanada.ca/prod/devportal-portaildesdeveloppeurs
+        mailby: "1111111"
+        mobo: "1111111"
+        paid_by: "1111111"
+        contract-id: "0011111111"
+        return_contract_id: "00111111111"
+        X-CPC-Zonos-Key: SkipZonosAccountKey
+        accessToken: AAIgNGMyMmZlYzA0ODQ2M2VjYjU5OTZhYjJmYzYzZmU5MmO7qLlUiuscPFuqNDt3Uhmjlv1pui-KXgXWcDl1QBACkXEeQUuLN8iluTitVSNQkYF9pxSQ-mpBqDt1rxpm7rSMA-ed1NIIR78M6Iks2co8VYBOEDMFeBeZc2GBUfqe2tQ
+        scope: merchant
+        merchant_api_key:
+          client_id: 4c22f1111111111111e92c
+          client_secret: 781e9111111111111111117c4f4
+    - name: Test
+      meta:
+        id: env_3ea03ee4c2c446f8815b3ecd3a234d7e
+        created: 1774617991101
+        modified: 1779972891613
+        isPrivate: true
+        sortKey: 1774617991101
+      data:
+        base_url: https://api.canadapost-postescanada.ca/prod/devportal-portaildesdeveloppeurs
+        mailby: "1111111"
+        mobo: "1111111"
+        paid_by: "1111111"
+        contract-id: "001111111"
+        return_contract_id: "001111111"
+        X-CPC-Zonos-Key: SkipZonosAccountKey
+        accessToken: AAIgZmMyYjAzYTU4OWU1MTZiM2VjOWFhYzExNWU4ZWM0Nja1JSwTX1bnhCnW1M6Z5Bn7mTxnRcf_YqvmknOwzZ3WO7uGIwyRvnbmpG2A3-WmW48etCQqI-dPwibGBxiyrVq8T671hQOV8c-_nS-TxlLL-kgNZbEQaquOthGTPwi7XJo
+        scope: merchant
+        merchant_api_key:
+          client_id: fc111111111111111111111466
+          client_secret: 95571111111111111111111111114854e
