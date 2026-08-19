@@ -1,0 +1,1040 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Developer Portal Platform Test Cases(Presentation)
+meta:
+  id: wrk_45557e6ea1e340559ae14971793f64b6
+  created: 1787165263415
+  modified: 1787165263415
+  description: ""
+collection:
+  - name: Shipping API's
+    meta:
+      id: fld_04b0b379edce45fd9daaa2f25f91a460
+      created: 1708476872959
+      modified: 1757517298180
+      sortKey: -1699892788294
+      description: ""
+    children:
+      - name: Shipping_Canada_Manifest_Required
+        meta:
+          id: fld_386e0e4670af4ee78461e9fa5d2a7ece
+          created: 1708476872959
+          modified: 1750770419891
+          sortKey: -1707426001917
+          description: >-
+            Below are all domestic shipments availabel to ship for Canada to
+            Canada
+
+
+            DOM.RP	Regular Parcel
+
+            DOM.EP	Expedited Parcel
+
+            DOM.XP	Xpresspost
+
+            DOM.PC	Priority
+
+            DOM.LIB	Library Books
+        children:
+          - name: Shipping_Options_scenario
+            meta:
+              id: fld_d69b7f6a7ce3479fbf527ff9d6176554
+              created: 1708476872960
+              modified: 1708476872960
+              sortKey: -1707425916812.7812
+              description: >-
+                Canada Post offer shipping options. Below are examples for each
+                options. For example you can make them available to the end user
+                to choose globally for all shipments or via a list where options
+                can be picked by the end user.
+
+
+                Keep in mind that options can be combined for example you could
+                have option for Coverage(insurance) and Signature for the same
+                shipments therefore it is important to allow selection of
+                multiple options per shipments.
+
+
+                Below are all shipping options available when shipping within
+                Canada
+
+                	"option-code": [
+                    "SO"				signature option
+                    "COD"				Collect On Delivery option
+                    "COV"				Insurance option
+                    "D2PO"			Delicer To Post Office option
+                    "HFP"				Hold For Pickup option
+                    "PA21"			Proof Of Age 21 option
+                    "PA19"			Proof Of Age 19 option
+                    "PA18"			Proof Of Age 18 option
+                    "LAD"				Leave At The Door option
+                    "DNS"				Do Not Safe Drop option
+                	]
+          - name: CreateShipments_And_QR_Code
+            meta:
+              id: fld_88207f8a5f654de1a61e8f8364a910dd
+              created: 1708476872974
+              modified: 1708476872974
+              sortKey: -1707425916821.375
+              description: ""
+          - name: Shipping Services for Canada
+            meta:
+              id: fld_0d101f5b12ef4a0382c00a4495677e9c
+              created: 1708476872976
+              modified: 1708476872976
+              sortKey: -1707425916804.1875
+              description: ""
+      - name: " Shipping_Canada_No_Manifest_Required"
+        meta:
+          id: fld_eb4150f679e64ee4ae8a167a18b8fcc9
+          created: 1708476872988
+          modified: 1757517298180
+          sortKey: -1707426001817
+          description: ""
+        children:
+          - name: Shipment_With_Shipping_Options
+            meta:
+              id: fld_75f44c83e1f946f88068c9c5e59b41cb
+              created: 1708476872988
+              modified: 1708476872988
+              sortKey: -1707426069368.875
+              description: >-
+                Canada Post offer shipping options. Below are examples for each
+                options. For example you can make them available to the end user
+                to choose globally for all shipments or via a list where options
+                can be picked by the end user.
+
+
+                Keep in mind that options can be combined for example you could
+                have option for Coverage(insurance) and Signature for the same
+                shipments therefore it is important to allow selection of
+                multiple options per shipments.
+          - name: CreateShipments_And_QR_Code
+            meta:
+              id: fld_0427e366152c48ecbb16b077250ce394
+              created: 1708476873004
+              modified: 1757517298180
+              sortKey: -1707426069372
+              description: ""
+          - name: Shipping Services for Canada
+            meta:
+              id: fld_61a1650eeb914cc8a5191a05bb66c979
+              created: 1708476873007
+              modified: 1708476873007
+              sortKey: -1707426069365.75
+              description: ""
+      - name: Shipping_USA_Manifest_Required
+        meta:
+          id: fld_f5ad2feff7e3424e916ed7be0036e1a3
+          created: 1708476873021
+          modified: 1740684746158
+          sortKey: -1699818832741.5
+          description: ""
+        children:
+          - name: Shipment_With_Shipping_Options
+            meta:
+              id: fld_6b522e60cc2f4ac3ac40189069ee210b
+              created: 1708476873021
+              modified: 1708476873021
+              sortKey: -1707673013479.4453
+              description: ""
+          - name: Non_Delivery_Handling_option_for_USA_Shipments
+            meta:
+              id: fld_09c386914b8c4ffeac8c121d36ebd28d
+              created: 1708476873025
+              modified: 1708476873025
+              sortKey: -1707672276841.6055
+              description: ""
+          - name: Shipping Services for USA
+            meta:
+              id: fld_ed9cb36717ac4d8e9cf5f08ef3aa461b
+              created: 1708476873031
+              modified: 1708476873031
+              sortKey: -1707672092682.1455
+              description: ""
+          - name: Shipment_and_Custom_Declaration_Info
+            meta:
+              id: fld_ddcab353201844848e7945ceeb4571a4
+              created: 1708476873035
+              modified: 1708476873035
+              sortKey: -1707671908522.6855
+              description: ""
+          - name: CreateShipments_And_QR_Code
+            meta:
+              id: fld_74259020b71141229bd62f8ad5312f0a
+              created: 1730292239786
+              modified: 1730292288611
+              sortKey: -1707673750117.2852
+              description: ""
+      - name: Shipping Receipt API
+        meta:
+          id: fld_b6c252ff2211449598604ecd00fdca59
+          created: 1708476873041
+          modified: 1708476873041
+          sortKey: -1699735193113.75
+          description: ""
+      - name: GetShipments API's
+        meta:
+          id: fld_5f9f87333ab24b2291a64d8905396d55
+          created: 1708476873042
+          modified: 1708476873042
+          sortKey: -1699682918283.9062
+          description: ""
+      - name: GetShipment API
+        meta:
+          id: fld_ce1cbe552e54413c8e067048c3d92b42
+          created: 1708476873045
+          modified: 1708476873045
+          sortKey: -1699693373249.875
+          description: ""
+      - name: Shipping_USA_No_Manifest_Required
+        meta:
+          id: fld_4beff67fc3f448b287d1515136046022
+          created: 1708476873046
+          modified: 1708476873046
+          sortKey: -1699797922834.5625
+          description: ""
+        children:
+          - name: Shipment_With_Shipping_Options
+            meta:
+              id: fld_85d6d418b36a4126840d57718cdf4105
+              created: 1708476873047
+              modified: 1708476873047
+              sortKey: -1707673013479.4453
+              description: ""
+          - name: Non_Delivery_Handling_option_for_USA_Shipments
+            meta:
+              id: fld_ebf220d3eabc4e97aefd588c788d97c9
+              created: 1708476873049
+              modified: 1708476873049
+              sortKey: -1707672276841.6055
+              description: ""
+          - name: Shipping Services for USA
+            meta:
+              id: fld_c637b41af5a840c69920077ba9cf5041
+              created: 1708476873057
+              modified: 1708476873057
+              sortKey: -1707672092682.1455
+              description: ""
+          - name: Shipment_and_Custom_Declaration_Info
+            meta:
+              id: fld_14bce785cb4846808bd508974297e5bf
+              created: 1708476873062
+              modified: 1708476873062
+              sortKey: -1707671908522.6855
+              description: ""
+          - name: CreateShipments_And_QR_Code
+            meta:
+              id: fld_7abbe18042854171a70165c7423c0b6c
+              created: 1730294092518
+              modified: 1730294179136
+              sortKey: -1707673750117.2852
+              description: ""
+      - name: GetArtefact_API's
+        meta:
+          id: fld_1d84a29694484be7ae9d4a5d312a86ff
+          created: 1708476873125
+          modified: 1708476873125
+          sortKey: -1699672463317.9375
+          description: ""
+      - name: Get Shipment Price API
+        meta:
+          id: fld_f037778143674bbbbca9fb7e9e6db0f2
+          created: 1708476873127
+          modified: 1708476873127
+          sortKey: -1699688145766.8906
+          description: ""
+      - name: Get Shipment Details API
+        meta:
+          id: fld_6996055b1a0f4f7d90958ed5fd999132
+          created: 1708476873130
+          modified: 1708476873130
+          sortKey: -1699685532025.3984
+          description: ""
+      - name: GetGroups API
+        meta:
+          id: fld_c57e4cabb3314628be67607377f2c7e0
+          created: 1708476873132
+          modified: 1708476873132
+          sortKey: -1699651552386
+          description: ""
+      - name: Void Shipment API
+        meta:
+          id: fld_7b4641d5a3184ee59f31b20765d6255e
+          created: 1708476873133
+          modified: 1708476873133
+          sortKey: -1699651552286
+          description: ""
+      - name: Shipment Refund API
+        meta:
+          id: fld_6611edad6d6641c692ef88f5df3586fe
+          created: 1708476873134
+          modified: 1708476873134
+          sortKey: -1699651552186
+          description: ""
+      - name: Manifest API's
+        meta:
+          id: fld_feb191dad9114a82bcd987efd1347b55
+          created: 1708476873135
+          modified: 1708476873135
+          sortKey: -1699750875543.9531
+          description: ""
+      - name: Shipping_International_Manifest_Required
+        meta:
+          id: fld_8398776e63d245829d300336e6b81683
+          created: 1730296737516
+          modified: 1730296770674
+          sortKey: -1699774399189.2578
+          description: ""
+        children:
+          - name: Shipment_With_Shipping_Options
+            meta:
+              id: fld_b82370d2a6e14a849410a039bb14edf7
+              created: 1730296737520
+              modified: 1730296737520
+              sortKey: -1707673013479.4453
+              description: ""
+          - name: Non_Delivery_Handling_option_for_Intl_Shipments
+            meta:
+              id: fld_68cb6f4a6d5b45cb85e7b8ae069484bb
+              created: 1730296737563
+              modified: 1730296737563
+              sortKey: -1707672276841.6055
+              description: ""
+          - name: Shipping Services for International
+            meta:
+              id: fld_5b64170907744dcaa01a451fd05e4362
+              created: 1730296737674
+              modified: 1730296737674
+              sortKey: -1707672092682.1455
+              description: ""
+          - name: Shipment_and_Custom_Declaration_Info
+            meta:
+              id: fld_d0054d871462433ab4b46c792ca5a105
+              created: 1730296737735
+              modified: 1730296737735
+              sortKey: -1707671908522.6855
+              description: ""
+          - name: CreateShipments_And_QR_Code
+            meta:
+              id: fld_34fc4956508e439585143dee0f1e8fa6
+              created: 1730296948036
+              modified: 1730296962046
+              sortKey: -1707673750117.2852
+              description: ""
+      - name: Shipping_International_No_Manifest_Required
+        meta:
+          id: fld_16d2a612f6804e62b61214c0fb95366a
+          created: 1730296801801
+          modified: 1730296837062
+          sortKey: -1699762637366.6055
+          description: ""
+        children:
+          - name: Shipment_With_Shipping_Options
+            meta:
+              id: fld_0f81aeecfc354d25ae5f5fc305322940
+              created: 1730296801805
+              modified: 1730296801805
+              sortKey: -1707673013479.4453
+              description: ""
+          - name: Non_Delivery_Handling_option_for_Intl_Shipments
+            meta:
+              id: fld_cf013db8a2ea4be5998cbd877675565c
+              created: 1730296801843
+              modified: 1730296801843
+              sortKey: -1707672276841.6055
+              description: ""
+          - name: Shipping Services for International
+            meta:
+              id: fld_9c3f9ad8c5bd4b10b78651be1bff77ef
+              created: 1730296801977
+              modified: 1730296801977
+              sortKey: -1707672092682.1455
+              description: ""
+          - name: Shipment_and_Custom_Declaration_Info
+            meta:
+              id: fld_aa9c47a15bb44403bbac2201df3455ad
+              created: 1730296802073
+              modified: 1730296802073
+              sortKey: -1707671908522.6855
+              description: ""
+          - name: CreateShipments_And_QR_Code
+            meta:
+              id: fld_231dc0e6245f4cd4aed774389b66ebd3
+              created: 1730297162809
+              modified: 1730297170734
+              sortKey: -1707673750117.2852
+              description: ""
+  - name: Rating API's
+    meta:
+      id: fld_289d08da9602463e92d49de4a711c301
+      created: 1708476873138
+      modified: 1770061060837
+      sortKey: -1699973212088
+      description: ""
+  - name: Tracking API's
+    meta:
+      id: fld_333e447736334bbc8ea529341e64dbf8
+      created: 1708476873143
+      modified: 1762453658459
+      sortKey: -1699985604029
+      description: ""
+  - name: Post Office API's
+    meta:
+      id: fld_e45df9385456486f876ec811ec285dee
+      created: 1739301319376
+      modified: 1743605825743
+      sortKey: -1699872682345.5
+      description: ""
+  - name: Return API's
+    meta:
+      id: fld_38f35e653f3144a29348a63d58fd0485
+      created: 1743605773726
+      modified: 1750260989134
+      sortKey: -1699867655858.375
+      description: ""
+    children:
+      - name: GetAuthorizedReturn
+        meta:
+          id: fld_a909875580374ad98ebe3bd372b77cd3
+          created: 1744727981658
+          modified: 1744728025020
+          sortKey: -1744727981658
+          description: ""
+      - name: Open Return Template
+        meta:
+          id: fld_bf02df88307b42ec8b0f06b632ebb401
+          created: 1744728066140
+          modified: 1745935321155
+          sortKey: -1744728066140
+          description: ""
+  - name: ServiceInfo
+    meta:
+      id: fld_aaed0f434dd543f78beb61a06aefee7b
+      created: 1744819333759
+      modified: 1762453649512
+      sortKey: -1699985604054
+      description: ""
+  - name: Customer Information Service
+    meta:
+      id: fld_7f9e4207fdf245d287779ec6fa04ac61
+      created: 1745935334729
+      modified: 1745935378123
+      sortKey: -1699862629371.25
+      description: ""
+  - name: Pickup API's
+    meta:
+      id: fld_7d1b87e3b4cd412abfd38fc18f953fca
+      created: 1750260142113
+      modified: 1750260179114
+      sortKey: -1699865142614.8125
+      description: ""
+    children:
+      - url: "{{ _.base_url }}/pickup/v1/pickup-availability/K0A1W0"
+        name: Pickup Availability
+        meta:
+          id: req_303732f2966e4222be2e3f31ad9fff94
+          created: 1750260296822
+          modified: 1775747996567
+          isPrivate: false
+          description: ""
+          sortKey: -1750260296822
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.2.0
+          - name: Accept
+            value: application/json
+            description: ""
+            disabled: false
+          - name: Accept-Language
+            value: en-CA
+            description: ""
+            disabled: false
+          - name: "{{ _['platform-id'] }}"
+            value: "{{ _['platform-id'] }}"
+            description: ""
+            disabled: false
+          - name: Authorization
+            value: Bearer {{ _.accessToken }}
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/pickup/v1/{{ _.mailby
+          }}/pickup-request/price?date=2026-04-24&contractId={{ _['contract-id']
+          }}&priorityFlag=true&pwwFlag=true"
+        name: Pickup Price
+        meta:
+          id: req_5b0709b9b8a34f0a9960b94033018e28
+          created: 1750260547007
+          modified: 1775747846273
+          isPrivate: false
+          description: ""
+          sortKey: -1750260547007
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.2.0
+          - name: Accept
+            value: application/json
+            description: ""
+            disabled: false
+          - name: Authorization
+            value: Bearer {{ _.accessToken }}
+            description: ""
+            disabled: false
+          - name: Accept-Language
+            value: en-CA
+            description: ""
+            disabled: false
+          - name: Platform-id
+            value: "{{ _['platform-id'] }}"
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/pickup/v1/{{ _.mailby }}/pickup-request"
+        name: Create Pickup
+        meta:
+          id: req_74e81158843445d28a96c65f0a96045a
+          created: 1750260908730
+          modified: 1775677612057
+          isPrivate: false
+          description: ""
+          sortKey: -1750260908730
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "contactInfo": {
+                "contactName": "John Doe",
+                "email": "john.doe@email.com",
+                "contactPhone": "613-123-4567",
+                "telephoneExt": "123",
+                "receiveEmailUpdatesFlag": true,
+                "lang": "e"
+              },
+              "locationDetails": {
+                "fiveTonFlag": false,
+                "loadingDockFlag": false,
+                "pickupInstructions": "Front door"
+              },
+              "itemCharacteristics": {
+                "priorityFlag": true,
+                "returnsFlag": true,
+                "heavyItemFlag": true
+              },
+              "pickupVolume": 10,
+              "pickupTimes": {
+                "onDemandPickupTime": {
+                  "date": "2026-05-26",
+                  "preferredTime": "13:00",
+                  "closingTime": "18:00"
+                }
+              },
+              "paymentInfo": {
+                "methodOfPayment": "Account",
+                "contractId": "{{ _['contract-id'] }}"
+              },
+              "pickupType": "Ondemand",
+              "pickupLocation": {
+                "businessAddressFlag": true
+              }
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.2.0
+          - name: Accept
+            value: application/json
+            description: ""
+            disabled: false
+          - name: Authorization
+            value: Bearer {{ _.accessToken }}
+            description: ""
+            disabled: false
+          - name: Platform-id
+            value: "{{ _['platform-id'] }}"
+            description: ""
+            disabled: false
+          - name: Accept-Language
+            value: en-CA
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/pickup/v1/{{ _.mailby }}/pickup-request/71014333"
+        name: Modify On-demand Pickup
+        meta:
+          id: req_5e2b4641ac064872a5a80b8c65b106cb
+          created: 1750261327707
+          modified: 1775742794550
+          isPrivate: false
+          description: ""
+          sortKey: -1750260727868.5
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"contactInfo": {
+            		"contactName": "John Doe",
+            		"email": "john.doe@email.com",
+            		"contactPhone": "613-123-4567",
+            		"telephoneExt": "123",
+            		"receiveEmailUpdatesFlag": true,
+            		"lang": "e"
+            	},
+            	"locationDetails": {
+            		"fiveTonFlag": false,
+            		"loadingDockFlag": false,
+            		"pickupInstructions": "Front door"
+            	},
+            	"itemCharacteristics": {
+            		"priorityFlag": true,
+            		"returnsFlag": true,
+            		"heavyItemFlag": true
+            	},
+            	"pickupVolume": 10,
+            	"pickupTimes": {
+            		"onDemandPickupTime": {
+            			"date": "2026-05-18",
+            			"preferredTime": "13:00",
+            			"closingTime": "18:00"
+            		}
+            	}
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.2.0
+          - name: Accept
+            value: application/json
+            description: ""
+            disabled: false
+          - name: Authorization
+            value: Bearer {{ _.accessToken }}
+            description: ""
+            disabled: false
+          - name: Platform-id
+            value: "{{ _['platform-id'] }}"
+            description: ""
+            disabled: false
+          - name: Accept-Language
+            value: en-CA
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/pickup/v1/createPickup/{{ _.mailby }}/pickup-request"
+        name: Create Pickup Alternate Address
+        meta:
+          id: req_94bf65acff4747c6ad31ec6b64cf1ad1
+          created: 1750770219645
+          modified: 1775677590123
+          isPrivate: false
+          description: ""
+          sortKey: -1750260818299.25
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "contactInfo": {
+                "contactName": "John Doe",
+                "email": "john.doe@email.com",
+                "contactPhone": "613-123-4567",
+                "telephoneExt": "123",
+                "receiveEmailUpdatesFlag": true,
+                "lang": "e"
+              },
+              "locationDetails": {
+                "fiveTonFlag": false,
+                "loadingDockFlag": false,
+                "pickupInstructions": "Front door"
+              },
+              "itemCharacteristics": {
+                "priorityFlag": true,
+                "returnsFlag": true,
+                "heavyItemFlag": true
+              },
+              "pickupVolume": 10,
+              "pickupTimes": {
+                "onDemandPickupTime": {
+                  "date": "2026-04-24",
+                  "preferredTime": "13:00",
+                  "closingTime": "18:00"
+                }
+              },
+              "paymentInfo": {
+                "methodOfPayment": "CreditCard",
+                "contractId": "{{ _['contract-id'] }}"
+              },
+              "pickupType": "Ondemand",
+              "pickupLocation": {
+                "businessAddressFlag": false,
+                "alternateAddress": {
+                  "company": "Testing Inc.",
+                  "addressLine1": "string",
+                  "city": "Ottawa",
+                  "province": "ON",
+                  "postalCode": "K2K3N5"
+                }
+              }
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.2.0
+          - name: Accept
+            value: application/json
+            description: ""
+            disabled: false
+          - name: Authorization
+            value: Bearer {{ _.accessToken }}
+            description: ""
+            disabled: false
+          - name: Accept-Language
+            value: en-CA
+            description: ""
+            disabled: false
+          - name: Platform-id
+            value: "{{ _['platform-id'] }}"
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/pickup/v1/{{ _.mailby }}/pickup-request/71014335"
+        name: Cancel On-demand Pickup
+        meta:
+          id: req_d0ac9dea441049eea32db4ce94c698a8
+          created: 1750770238334
+          modified: 1775744124651
+          isPrivate: false
+          description: ""
+          sortKey: -1750260637437.75
+        method: DELETE
+        body:
+          mimeType: application/json
+          text: ""
+        headers:
+          - name: Content-Type
+            value: "{{ _['platform-id'] }}"
+          - name: User-Agent
+            value: insomnia/11.2.0
+          - name: Accept
+            value: application/json
+            description: ""
+            disabled: false
+          - name: Authorization
+            value: Bearer {{ _.accessToken }}
+            description: ""
+            disabled: false
+          - name: Accept-Language
+            value: en-CA
+            description: ""
+            disabled: false
+          - name: Platform-id
+            value: "{{ _['platform-id'] }}"
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/pickup/v1/{{ _.mailby }}/pickup-request/71014333"
+        name: Get All On Demand Pickups
+        meta:
+          id: req_33e8947d93c34b599a1ec4028d108773
+          created: 1775677027223
+          modified: 1775746874888
+          isPrivate: false
+          description: ""
+          sortKey: -1750260631785.8281
+        method: GET
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "pickupLocation": {
+                "businessAddr": true,
+                "alternateAddr": {
+                  "addrLn1": "365 March Road",
+                  "city": "Ottawa",
+                  "province": "ON",
+                  "postalCode": "K2K3N5",
+                  "countryCd": "CA",
+                  "companyNm": "Testing Inc."
+                }
+              },
+              "retryPursId": "",
+              "contactInfo": {
+                "email": "john.doe@email.com",
+                "receiveEmailUpdate": false,
+                "lang": "e",
+                "contactNm": "John Doe",
+                "phone": "613-123-4567",
+                "phoneExt": "123"
+              },
+              "pickupVolume": "5",
+              "pickupTimeAndCharge": [
+                {
+                  "pickupCharge": 3.96,
+                  "pickupTime": {
+                    "date": "2025-04-08",
+                    "preferredTime": "12:00",
+                    "closingTime": "16:00"
+                  }
+                }
+              ],
+              "remark": "Order created",
+              "authorizingPerson": "",
+              "payment": {
+                "paymentMethod": "Account",
+                "contractId": "{{ _['contract-id'] }}",
+                "promoCd": "ABCD",
+                "creditCardInfo": {
+                  "cardType": "M",
+                  "cardNbr": "520474S9bA7z4600",
+                  "holderNm": "HYDRO ONE NETWORKS INC",
+                  "cardExpiryDate": "03-2024",
+                  "authed": true,
+                  "currency": "CAD",
+                  "currencyIso": "CAD",
+                  "authDate": "2023-03-10",
+                  "authTime": "04:41",
+                  "authNbr": "KN4819",
+                  "authRefNbr": "51584-0_440",
+                  "authResult": "A",
+                  "externalSysCall": "C",
+                  "authResultDesc": "APPROVED",
+                  "paymentId": "2aa162d8e6f84bd4997bd437179adc1d",
+                  "transactionId": "51584-0_440",
+                  "billAmt": 3.96,
+                  "authAmt": 3.96
+                },
+                "thirdPartyAccountInfo": {
+                  "accountNumber": "13263263",
+                  "authCode": "7022019028645",
+                  "authTimestamp": "20190702130226",
+                  "chargeAmount": 3.96,
+                  "supplierId": "PB"
+                },
+                "accountPayer": "066331"
+              },
+              "isMissedOrder": false,
+              "locationDetail": {
+                "additionalInstruction": "Knock knock",
+                "5TonTruckRequired": true,
+                "pickupInstruction": "Front door",
+                "loadingDockExist": true
+              },
+              "itemsCharacteristic": {
+                "iilpFlag": false,
+                "otherFlag": false,
+                "estimatedWeight": 3.2,
+                "estimatedHeight": 25,
+                "estimatedWidth": 25,
+                "estimatedDepth": 25,
+                "estimatedDimension": "Estimated dimension",
+                "heavyItems": true,
+                "worldwideItems": true,
+                "priorityItems": true,
+                "returnItems": true,
+                "unitWeightType": "kg"
+              },
+              "customerRequestId": "987654321"
+            }
+        headers:
+          - name: Content-Type
+            value: application/vnd.cpc.purs-v1+json
+          - name: User-Agent
+            value: insomnia/11.2.0
+          - name: ""
+            value: application/vnd.cpc.purs-v1+json
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/pickup/v1/{{ _.mailby }}/pickup-request/71014335/details"
+        name: Get Pickup Details
+        meta:
+          id: req_e56d1dcb46a84669bb10c8cf6bc8fa66
+          created: 1775745842072
+          modified: 1775746274771
+          isPrivate: false
+          description: ""
+          sortKey: -1750260626133.9062
+        method: GET
+        body:
+          mimeType: application/json
+          text: ""
+        headers:
+          - name: Content-Type
+            value: "{{ _['platform-id'] }}"
+          - name: User-Agent
+            value: insomnia/11.2.0
+          - name: Accept
+            value: application/json
+            description: ""
+            disabled: false
+          - name: Authorization
+            value: Bearer {{ _.accessToken }}
+            description: ""
+            disabled: false
+          - name: Accept-Language
+            value: en-CA
+            description: ""
+            disabled: false
+          - name: Platform-id
+            value: "{{ _['platform-id'] }}"
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/pickup/v1/{{ _.mailby
+          }}/pickup-request/price?date=2026-04-24&contractId={{ _['contract-id']
+          }}&priorityFlag=true&pwwFlag=true&alternateAddressPostalCode=K2K3N5"
+        name: Pickup Price for Alternate Address
+        meta:
+          id: req_127f0b522c8647eb8639b3dbc293f14a
+          created: 1775747703054
+          modified: 1775747811199
+          isPrivate: false
+          description: ""
+          sortKey: -1750260484460.75
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.2.0
+          - name: Accept
+            value: application/json
+            description: ""
+            disabled: false
+          - name: Authorization
+            value: Bearer {{ _.accessToken }}
+            description: ""
+            disabled: false
+          - name: Accept-Language
+            value: en-CA
+            description: ""
+            disabled: false
+          - name: Platform-id
+            value: "{{ _['platform-id'] }}"
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_e32481f0a540435b8b429e130f45def8
+    created: 1708476872957
+    modified: 1779823350882
+environments:
+  name: Canada Post Environments
+  meta:
+    id: env_db181016522e45dbbf6d41eba3af452b
+    created: 1708476872955
+    modified: 1787165296295
+    isPrivate: false
+  subEnvironments:
+    - name: TEST
+      meta:
+        id: env_567e05a1de9b4a5cb2c12218d1211507
+        created: 1772818997692
+        modified: 1779973093801
+        isPrivate: false
+        sortKey: 1772818997692
+      data:
+        base_url: https://api.canadapost-postescanada.ca/prod/devportal-portaildesdeveloppeurs
+        platform-id: "1111111"
+        mailby: "1111111"
+        mobo: "1111111"
+        paid_by: "1111111"
+        contract-id: "41111111"
+        return_contract_id: "41111111"
+        X-CPC-Zonos-Key: SkipZonosAccountKey
+        accessToken: AAIgMWE3MDViOTAxNGY1ZmQ0NGZkZDhhMmE4NTllZTA2NTdqdwCxl9_aBGAZFh_1ajS3LyLrxWZUxVq_xp6ZrLFho2rVLSADJCeSNLvmlijuxiDJVlpDbp_wjT7371yO3X_PGQlFEIALmXNK1Ey1Mm35sOxOvQ3jnd7AqXnpnadjw4w
+        scope: merchant
+        merchant_api_key:
+          client_id: 1a70weweeeeeeeeeee0657
+          client_secret: 29e612weeeeeeeeeeeeefd554ef
+    - name: Production
+      meta:
+        id: env_688097871572450a88a37d23758dceaa
+        created: 1777399940716
+        modified: 1779973035753
+        isPrivate: true
+        sortKey: 1777399940716
+      data:
+        base_url: https://api.canadapost-postescanada.ca/prod/devportal-portaildesdeveloppeurs
+        platform-id: "1111111"
+        mailby: "1111111"
+        mobo: "1111111"
+        paid_by: "1111111"
+        contract-id: "001111111"
+        return_contract_id: "001111111"
+        X-CPC-Zonos-Key: SkipZonosAccountKey
+        accessToken: AAIgNDkwMGI4YmY3MTNlODUyOGM1ZWMxYTRkOTdlNzUxZWFMEPg5Al_y1ACzWk4qRm-q-xC6fP_ON7sUO1mHrSBRAjpnvnjnYM5M2TNXXsuG72qT-tzlqQg6XuPAHdG0YaXKtoD_dsjYoYcCfQaOWR2BLkceaiYB5kSZc7kN2gt72jk
+        scope: merchant
+        merchant_api_key:
+          client_id: 490211111111111112122112e751ea
+          client_secret: ddb212222222222222221221211ae28
