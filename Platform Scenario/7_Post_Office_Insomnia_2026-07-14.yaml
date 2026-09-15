@@ -1,0 +1,786 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Developer Portal Platform Test Cases(Presentation)
+meta:
+  id: wrk_a9f3bf5cb578492e8ec4bca8e204be8f
+  created: 1789484118341
+  modified: 1789484118341
+  description: ""
+collection:
+  - name: Shipping API's
+    meta:
+      id: fld_aba7d6f189324b7992ecc6177db664ae
+      created: 1708476872959
+      modified: 1757517298180
+      sortKey: -1699892788294
+      description: ""
+    children:
+      - name: Shipping_Canada_Manifest_Required
+        meta:
+          id: fld_b525c521c1ac443c827e1bc40cc9daa3
+          created: 1708476872959
+          modified: 1750770419891
+          sortKey: -1707426001917
+          description: >-
+            Below are all domestic shipments availabel to ship for Canada to
+            Canada
+
+
+            DOM.RP	Regular Parcel
+
+            DOM.EP	Expedited Parcel
+
+            DOM.XP	Xpresspost
+
+            DOM.PC	Priority
+
+            DOM.LIB	Library Books
+        children:
+          - name: Shipping_Options_scenario
+            meta:
+              id: fld_e3ab7cfd5b76435aa242a8b2976143e8
+              created: 1708476872960
+              modified: 1708476872960
+              sortKey: -1707425916812.7812
+              description: >-
+                Canada Post offer shipping options. Below are examples for each
+                options. For example you can make them available to the end user
+                to choose globally for all shipments or via a list where options
+                can be picked by the end user.
+
+
+                Keep in mind that options can be combined for example you could
+                have option for Coverage(insurance) and Signature for the same
+                shipments therefore it is important to allow selection of
+                multiple options per shipments.
+
+
+                Below are all shipping options available when shipping within
+                Canada
+
+                	"option-code": [
+                    "SO"				signature option
+                    "COD"				Collect On Delivery option
+                    "COV"				Insurance option
+                    "D2PO"			Delicer To Post Office option
+                    "HFP"				Hold For Pickup option
+                    "PA21"			Proof Of Age 21 option
+                    "PA19"			Proof Of Age 19 option
+                    "PA18"			Proof Of Age 18 option
+                    "LAD"				Leave At The Door option
+                    "DNS"				Do Not Safe Drop option
+                	]
+          - name: CreateShipments_And_QR_Code
+            meta:
+              id: fld_9a6b99dbd2844b3a976050fdbc6d2b4a
+              created: 1708476872974
+              modified: 1708476872974
+              sortKey: -1707425916821.375
+              description: ""
+          - name: Shipping Services for Canada
+            meta:
+              id: fld_a1e24df6694f45f9873c7f7b88d15536
+              created: 1708476872976
+              modified: 1708476872976
+              sortKey: -1707425916804.1875
+              description: ""
+      - name: " Shipping_Canada_No_Manifest_Required"
+        meta:
+          id: fld_ba47e1b815114a3f8c7bfe3a348564c0
+          created: 1708476872988
+          modified: 1757517298180
+          sortKey: -1707426001817
+          description: ""
+        children:
+          - name: Shipment_With_Shipping_Options
+            meta:
+              id: fld_591621ac46a94e889db999c4a33dffdb
+              created: 1708476872988
+              modified: 1708476872988
+              sortKey: -1707426069368.875
+              description: >-
+                Canada Post offer shipping options. Below are examples for each
+                options. For example you can make them available to the end user
+                to choose globally for all shipments or via a list where options
+                can be picked by the end user.
+
+
+                Keep in mind that options can be combined for example you could
+                have option for Coverage(insurance) and Signature for the same
+                shipments therefore it is important to allow selection of
+                multiple options per shipments.
+          - name: CreateShipments_And_QR_Code
+            meta:
+              id: fld_42d1bb8e51574eb48b4b897e876d5db5
+              created: 1708476873004
+              modified: 1757517298180
+              sortKey: -1707426069372
+              description: ""
+          - name: Shipping Services for Canada
+            meta:
+              id: fld_a3c981ae484344dda66a3992eac5c220
+              created: 1708476873007
+              modified: 1708476873007
+              sortKey: -1707426069365.75
+              description: ""
+      - name: Shipping_USA_Manifest_Required
+        meta:
+          id: fld_05cbde4b2b0546cbb4789a0e2d0c2b45
+          created: 1708476873021
+          modified: 1740684746158
+          sortKey: -1699818832741.5
+          description: ""
+        children:
+          - name: Shipment_With_Shipping_Options
+            meta:
+              id: fld_316a44d010ba4e7a9514c54de743ab1e
+              created: 1708476873021
+              modified: 1708476873021
+              sortKey: -1707673013479.4453
+              description: ""
+          - name: Non_Delivery_Handling_option_for_USA_Shipments
+            meta:
+              id: fld_58424cdcd38b4d508116e5d842af2b76
+              created: 1708476873025
+              modified: 1708476873025
+              sortKey: -1707672276841.6055
+              description: ""
+          - name: Shipping Services for USA
+            meta:
+              id: fld_b0645c9578d547f6ae17aab5a7db077a
+              created: 1708476873031
+              modified: 1708476873031
+              sortKey: -1707672092682.1455
+              description: ""
+          - name: Shipment_and_Custom_Declaration_Info
+            meta:
+              id: fld_6367386424cf4f14832b6ca6602ec9ec
+              created: 1708476873035
+              modified: 1708476873035
+              sortKey: -1707671908522.6855
+              description: ""
+          - name: CreateShipments_And_QR_Code
+            meta:
+              id: fld_e7f1b7c2c3b64140909d02eb0db6c988
+              created: 1730292239786
+              modified: 1730292288611
+              sortKey: -1707673750117.2852
+              description: ""
+      - name: Shipping Receipt API
+        meta:
+          id: fld_33c0d90a2d2544369c6d2701b606de0e
+          created: 1708476873041
+          modified: 1708476873041
+          sortKey: -1699735193113.75
+          description: ""
+      - name: GetShipments API's
+        meta:
+          id: fld_167638d36c744af3b8cf6c0e67f6126c
+          created: 1708476873042
+          modified: 1708476873042
+          sortKey: -1699682918283.9062
+          description: ""
+      - name: GetShipment API
+        meta:
+          id: fld_4aa9952e6f5c47f7802e903d1e7b08a7
+          created: 1708476873045
+          modified: 1708476873045
+          sortKey: -1699693373249.875
+          description: ""
+      - name: Shipping_USA_No_Manifest_Required
+        meta:
+          id: fld_8eccfaddd1594059a6febb13ebb37d75
+          created: 1708476873046
+          modified: 1708476873046
+          sortKey: -1699797922834.5625
+          description: ""
+        children:
+          - name: Shipment_With_Shipping_Options
+            meta:
+              id: fld_966e9aad32324192922945472d2be537
+              created: 1708476873047
+              modified: 1708476873047
+              sortKey: -1707673013479.4453
+              description: ""
+          - name: Non_Delivery_Handling_option_for_USA_Shipments
+            meta:
+              id: fld_08dc579ef02a49e999b8fb6851a2cd58
+              created: 1708476873049
+              modified: 1708476873049
+              sortKey: -1707672276841.6055
+              description: ""
+          - name: Shipping Services for USA
+            meta:
+              id: fld_9475eb3cb60749c287a6d442f2db6536
+              created: 1708476873057
+              modified: 1708476873057
+              sortKey: -1707672092682.1455
+              description: ""
+          - name: Shipment_and_Custom_Declaration_Info
+            meta:
+              id: fld_0cbf74233aa04e208c44c00678857838
+              created: 1708476873062
+              modified: 1708476873062
+              sortKey: -1707671908522.6855
+              description: ""
+          - name: CreateShipments_And_QR_Code
+            meta:
+              id: fld_97df5f9bbc3a405692101414601a8573
+              created: 1730294092518
+              modified: 1730294179136
+              sortKey: -1707673750117.2852
+              description: ""
+      - name: GetArtefact_API's
+        meta:
+          id: fld_d559a542591749608c5c08b2e3dd3c0e
+          created: 1708476873125
+          modified: 1708476873125
+          sortKey: -1699672463317.9375
+          description: ""
+      - name: Get Shipment Price API
+        meta:
+          id: fld_c75334c838cd48f3a1fdc311675a23fa
+          created: 1708476873127
+          modified: 1708476873127
+          sortKey: -1699688145766.8906
+          description: ""
+      - name: Get Shipment Details API
+        meta:
+          id: fld_ddf9e07a7ed949d79de01b3928cec2e2
+          created: 1708476873130
+          modified: 1708476873130
+          sortKey: -1699685532025.3984
+          description: ""
+      - name: GetGroups API
+        meta:
+          id: fld_75938f0f7589403d817fcfc80be532e2
+          created: 1708476873132
+          modified: 1708476873132
+          sortKey: -1699651552386
+          description: ""
+      - name: Void Shipment API
+        meta:
+          id: fld_9530e96b799d4681acafe366df11fc17
+          created: 1708476873133
+          modified: 1708476873133
+          sortKey: -1699651552286
+          description: ""
+      - name: Shipment Refund API
+        meta:
+          id: fld_1f6c3da0122946f48f29a6414f2c0af5
+          created: 1708476873134
+          modified: 1708476873134
+          sortKey: -1699651552186
+          description: ""
+      - name: Manifest API's
+        meta:
+          id: fld_0f1316e636814e68a6d80973426fe384
+          created: 1708476873135
+          modified: 1708476873135
+          sortKey: -1699750875543.9531
+          description: ""
+      - name: Shipping_International_Manifest_Required
+        meta:
+          id: fld_796d06a6b41f408883df40aee53a7022
+          created: 1730296737516
+          modified: 1730296770674
+          sortKey: -1699774399189.2578
+          description: ""
+        children:
+          - name: Shipment_With_Shipping_Options
+            meta:
+              id: fld_962ac61c903e4d4f8080beb971bbf0cb
+              created: 1730296737520
+              modified: 1730296737520
+              sortKey: -1707673013479.4453
+              description: ""
+          - name: Non_Delivery_Handling_option_for_Intl_Shipments
+            meta:
+              id: fld_3ce4b98141144fac9ec2c47b8c38b9b0
+              created: 1730296737563
+              modified: 1730296737563
+              sortKey: -1707672276841.6055
+              description: ""
+          - name: Shipping Services for International
+            meta:
+              id: fld_75efd052ba8544569662ca0e4c89b045
+              created: 1730296737674
+              modified: 1730296737674
+              sortKey: -1707672092682.1455
+              description: ""
+          - name: Shipment_and_Custom_Declaration_Info
+            meta:
+              id: fld_e9c6cdde7fe14b75923870de7fddfb6d
+              created: 1730296737735
+              modified: 1730296737735
+              sortKey: -1707671908522.6855
+              description: ""
+          - name: CreateShipments_And_QR_Code
+            meta:
+              id: fld_65809b3b618349ea978894ad39798797
+              created: 1730296948036
+              modified: 1730296962046
+              sortKey: -1707673750117.2852
+              description: ""
+      - name: Shipping_International_No_Manifest_Required
+        meta:
+          id: fld_1e0b0b8c749d4a6aa771f127287f71e8
+          created: 1730296801801
+          modified: 1730296837062
+          sortKey: -1699762637366.6055
+          description: ""
+        children:
+          - name: Shipment_With_Shipping_Options
+            meta:
+              id: fld_e65329d64cb2406380ed53ddeb1fc903
+              created: 1730296801805
+              modified: 1730296801805
+              sortKey: -1707673013479.4453
+              description: ""
+          - name: Non_Delivery_Handling_option_for_Intl_Shipments
+            meta:
+              id: fld_d4f4f2e799e54c6491d44816c182631a
+              created: 1730296801843
+              modified: 1730296801843
+              sortKey: -1707672276841.6055
+              description: ""
+          - name: Shipping Services for International
+            meta:
+              id: fld_1df7f670f4184012a14e3ebc2ed8948b
+              created: 1730296801977
+              modified: 1730296801977
+              sortKey: -1707672092682.1455
+              description: ""
+          - name: Shipment_and_Custom_Declaration_Info
+            meta:
+              id: fld_2845b01c3c434e2c899c8f70156c3b79
+              created: 1730296802073
+              modified: 1730296802073
+              sortKey: -1707671908522.6855
+              description: ""
+          - name: CreateShipments_And_QR_Code
+            meta:
+              id: fld_d6dd4bd101204d2a85218c750efdbfce
+              created: 1730297162809
+              modified: 1730297170734
+              sortKey: -1707673750117.2852
+              description: ""
+  - name: Rating API's
+    meta:
+      id: fld_47bbe13c9787454b92889cacbd4493f8
+      created: 1708476873138
+      modified: 1770061060837
+      sortKey: -1699973212088
+      description: ""
+  - name: Tracking API's
+    meta:
+      id: fld_31faa977d5c14f669c4d42115295263e
+      created: 1708476873143
+      modified: 1762453658459
+      sortKey: -1699985604029
+      description: ""
+  - name: Post Office API's
+    meta:
+      id: fld_dea65f1a4de745a7b293b7a3edf4d8b6
+      created: 1739301319376
+      modified: 1743605825743
+      sortKey: -1699872682345.5
+      description: ""
+    children:
+      - url: "{{ _.base_url }}/postoffice/v1/post-offices?maximum=50&postal-code=K0A1W0"
+        name: GetNearestPostOfficeByPostalCode
+        meta:
+          id: req_81c4d253323f4ac0aa4eb0c52ddeca2e
+          created: 1739301601657
+          modified: 1789484169913
+          isPrivate: false
+          description: ""
+          sortKey: -1733673905552.375
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/10.3.1
+            disabled: true
+          - name: Accept
+            value: application/json
+            description: ""
+            disabled: false
+          - name: Authorization
+            value: Bearer {{ _.accessToken }}
+            description: ""
+            disabled: false
+          - name: Platform-id
+            value: "{{ _['platform-id'] }}"
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url
+          }}/postoffice/v1/postoffice?maximum=50&longitude=-101.32354&latitude=\
+          55.32354"
+        name: GetNearestPostOfficeByLongitude&Latitude
+        meta:
+          id: req_469ec51c03724f89bfa24c7ce5b10bbf
+          created: 1739302914706
+          modified: 1743013748460
+          isPrivate: false
+          description: ""
+          sortKey: -1733673905652.375
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/10.3.1
+            disabled: true
+          - name: ""
+            value: application/vnd.cpc.apic.postoffice+json
+            description: ""
+            disabled: false
+          - name: Authorization
+            value: Bearer {{ _.accessToken }}
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url
+          }}/postoffice/v1/post-offices?maximum=50&d2po=true&postal-code=K2K0B1"
+        name: GetNearestPostOffice_With_D2PO=true WithPostalCode
+        meta:
+          id: req_77222754c7d946a3afbef87d54535e42
+          created: 1743012598317
+          modified: 1789484178697
+          isPrivate: false
+          description: ""
+          sortKey: -1732548366331.25
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/10.3.1
+            disabled: true
+          - name: Accept
+            value: application/json
+            description: ""
+            disabled: false
+          - name: Authorization
+            value: Bearer {{ _.accessToken }}
+            description: ""
+            disabled: false
+          - name: Accept-Language
+            value: en-CA
+            description: ""
+            disabled: false
+          - name: Platform-id
+            value: "{{ _['platform-id'] }}"
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url
+          }}/postoffice/v1/post-offices?maximum=50&BFLF=true&postal-code=K2K0B1"
+        name: GetNearestPostOffice_With_BFLF=true WithPostalCode
+        meta:
+          id: req_4ebfa42f6ff7499d8d5737b1e8f5d80b
+          created: 1743012894431
+          modified: 1789484190592
+          isPrivate: false
+          description: ""
+          sortKey: -1731422827110.125
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/10.3.1
+            disabled: true
+          - name: Accept
+            value: application/json
+            description: ""
+            disabled: false
+          - name: Authorization
+            value: Bearer {{ _.accessToken }}
+            description: ""
+            disabled: false
+          - name: Platform-id
+            value: "{{ _['platform-id'] }}"
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url
+          }}/postoffice/v1/post-offices?maximum=50&d2po=true&longitude=-101.323\
+          54&latitude=55.32354"
+        name: GetNearestPostOfficeByLongitude&Latitude_With_D2PO=true
+        meta:
+          id: req_5ca8369ee00a488e926b342faa07129c
+          created: 1743015810511
+          modified: 1789484158400
+          isPrivate: false
+          description: ""
+          sortKey: -1733673905602.375
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/10.3.1
+            disabled: true
+          - name: Accept
+            value: application/json
+            description: ""
+            disabled: false
+          - name: Authorization
+            value: Bearer {{ _.accessToken }}
+            description: ""
+            disabled: false
+          - name: Accept-Language
+            value: en-CA
+            description: ""
+            disabled: false
+          - name: Platform-id
+            value: "{{ _['platform-id'] }}"
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url
+          }}/postoffice/v1/post-offices?maximum=50&BFLF=true&longitude=-101.323\
+          54&latitude=55.32354"
+        name: GetNearestPostOfficeByLongitude&Latitude_With_BFLF=true
+        meta:
+          id: req_f0be42e4710d4dbd933bd7a3c44ff8a3
+          created: 1743015848716
+          modified: 1775659944408
+          isPrivate: false
+          description: ""
+          sortKey: -1733673905577.375
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/10.3.1
+            disabled: true
+          - name: Accept
+            value: application/json
+            description: ""
+            disabled: false
+          - name: Authorization
+            value: Bearer {{ _.accessToken }}
+            description: ""
+            disabled: false
+          - name: Accept-Language
+            value: en-CA
+            description: ""
+            disabled: false
+          - name: Platform-id
+            value: "{{ _['platform-id'] }}"
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/postoffice/v1/post-offices/311545/details"
+        name: GetPostOfficeDetail
+        meta:
+          id: req_ca4909f1e3504a96803a7249b9623abe
+          created: 1743016188055
+          modified: 1775659345011
+          isPrivate: false
+          description: ""
+          sortKey: -1733673905752.375
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/10.3.1
+            disabled: true
+          - name: Accept
+            value: application/json
+            description: ""
+            disabled: false
+          - name: Authorization
+            value: Bearer {{ _.accessToken }}
+            description: ""
+            disabled: false
+          - name: Accept-Language
+            value: en-CA
+            description: ""
+            disabled: false
+          - name: Platform-id
+            value: "{{ _['platform-id'] }}"
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url
+          }}/postoffice/v1/post-offices?maximum=50&d2po=true&province=ON&city=O\
+          ttawa&streetName=riverside"
+        name: GetNearestPostOffice_With_Province_City_StreetName
+        meta:
+          id: req_a2b83421b5484c6db8d489d09783c081
+          created: 1743600598060
+          modified: 1789484209538
+          isPrivate: false
+          description: ""
+          sortKey: -1730578672694.2812
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/10.3.1
+            disabled: true
+          - name: Accept
+            value: application/json
+            description: ""
+            disabled: false
+          - name: Authorization
+            value: Bearer {{ _.accessToken }}
+            description: ""
+            disabled: false
+          - name: Platform-id
+            value: "{{ _['platform-id'] }}"
+            description: ""
+            disabled: false
+          - name: Accept-Language
+            value: en-CA
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Return API's
+    meta:
+      id: fld_71d79f6e304d4241b9e8e2f40ee31649
+      created: 1743605773726
+      modified: 1750260989134
+      sortKey: -1699867655858.375
+      description: ""
+    children:
+      - name: GetAuthorizedReturn
+        meta:
+          id: fld_78c7b81ebecc4c789d80bd75730604d3
+          created: 1744727981658
+          modified: 1744728025020
+          sortKey: -1744727981658
+          description: ""
+      - name: Open Return Template
+        meta:
+          id: fld_9ef454bea71b4df5bcfcd44ac257ac60
+          created: 1744728066140
+          modified: 1745935321155
+          sortKey: -1744728066140
+          description: ""
+  - name: ServiceInfo
+    meta:
+      id: fld_ad22a01b9c43432dbda4009f3a03d0f7
+      created: 1744819333759
+      modified: 1762453649512
+      sortKey: -1699985604054
+      description: ""
+  - name: Customer Information Service
+    meta:
+      id: fld_4261c462731e4abdb0b49e0793537042
+      created: 1745935334729
+      modified: 1745935378123
+      sortKey: -1699862629371.25
+      description: ""
+  - name: Pickup API's
+    meta:
+      id: fld_15242d6fffff46b29ae538b393079d1f
+      created: 1750260142113
+      modified: 1750260179114
+      sortKey: -1699865142614.8125
+      description: ""
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_51acd83143de4e59bb671f3ccb4a7917
+    created: 1708476872957
+    modified: 1779823350882
+environments:
+  name: Canada Post Environments
+  meta:
+    id: env_685ee545eab943fdba1ea3752f2c2ce5
+    created: 1708476872955
+    modified: 1787165296295
+    isPrivate: false
+  subEnvironments:
+    - name: TEST
+      meta:
+        id: env_016fec9110e043ef81ad27396589e08c
+        created: 1772818997692
+        modified: 1779973093801
+        isPrivate: false
+        sortKey: 1772818997692
+      data:
+        base_url: https://api.canadapost-postescanada.ca/prod/devportal-portaildesdeveloppeurs
+        platform-id: "1111111"
+        mailby: "1111111"
+        mobo: "1111111"
+        paid_by: "1111111"
+        contract-id: "41111111"
+        return_contract_id: "41111111"
+        X-CPC-Zonos-Key: SkipZonosAccountKey
+        accessToken: AAIgMWE3MDViOTAxNGY1ZmQ0NGZkZDhhMmE4NTllZTA2NTdqdwCxl9_aBGAZFh_1ajS3LyLrxWZUxVq_xp6ZrLFho2rVLSADJCeSNLvmlijuxiDJVlpDbp_wjT7371yO3X_PGQlFEIALmXNK1Ey1Mm35sOxOvQ3jnd7AqXnpnadjw4w
+        scope: merchant
+        merchant_api_key:
+          client_id: 1a70weweeeeeeeeeee0657
+          client_secret: 29e612weeeeeeeeeeeeefd554ef
+    - name: Production
+      meta:
+        id: env_f4879c25539b49d0a8ce5fc30cb38513
+        created: 1777399940716
+        modified: 1779973035753
+        isPrivate: true
+        sortKey: 1777399940716
+      data:
+        base_url: https://api.canadapost-postescanada.ca/prod/devportal-portaildesdeveloppeurs
+        platform-id: "1111111"
+        mailby: "1111111"
+        mobo: "1111111"
+        paid_by: "1111111"
+        contract-id: "001111111"
+        return_contract_id: "001111111"
+        X-CPC-Zonos-Key: SkipZonosAccountKey
+        accessToken: AAIgNDkwMGI4YmY3MTNlODUyOGM1ZWMxYTRkOTdlNzUxZWFMEPg5Al_y1ACzWk4qRm-q-xC6fP_ON7sUO1mHrSBRAjpnvnjnYM5M2TNXXsuG72qT-tzlqQg6XuPAHdG0YaXKtoD_dsjYoYcCfQaOWR2BLkceaiYB5kSZc7kN2gt72jk
+        scope: merchant
+        merchant_api_key:
+          client_id: 490211111111111112122112e751ea
+          client_secret: ddb212222222222222221221211ae28
