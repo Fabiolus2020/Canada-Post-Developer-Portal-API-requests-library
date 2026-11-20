@@ -70,8 +70,8 @@ collection:
         curl -- request POST
         <br>
         -- URL https://&lt;APIGateway&gt;/oauth2/token
-        -header 'X-IBM-Client-Id: 368b7f95d5574d85f83bcc04421628de'
-        --header 'X-IBM-Client-Secret: 3cb4a38f6598652c726c06a2db513b6d'
+        -header 'X-IBM-Client-Id: 368b7f95d557232323232c04421628de'
+        --header 'X-IBM-Client-Secret: 3cb4a38f659ererreerc06a2db513b6d'
         --header 'accept: application/json'
         --data 'scope=merchant&amp;grant_type=client_credentials'</pre>
         <br>
